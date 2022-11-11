@@ -4,12 +4,11 @@
       SV Dex
     </h1>
     <div class="flex flex-col gap-2">
-      <div
+      <PokemonWrapper
         v-for="pokemon in pokemonList"
         :key="pokemon.name"
-      >
-        {{ pokemon.name }}
-      </div>
+        :pokemon="pokemon"
+      />
     </div>
   </div>
 </template>
@@ -17,9 +16,13 @@
 <script lang="ts">
 import { defineComponent } from 'vue';
 import pokemonList from '@/assets/pokemon';
+import PokemonWrapper from '@/components/PokemonWrapper.vue';
 
 export default defineComponent({
   name: 'HomeView',
+  components: {
+    PokemonWrapper
+  },
   setup() {
     return {
       pokemonList
