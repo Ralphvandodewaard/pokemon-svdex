@@ -15,7 +15,7 @@ module.exports = {
         rock: '#b8a038',
         bug: '#a8b820',
         ghost: '#705898',
-        steel: 'b8b8d0',
+        steel: '#b8b8d0',
         fire: '#f08030',
         water: '#6890f0',
         grass: '#78c850',
