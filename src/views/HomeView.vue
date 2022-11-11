@@ -2,6 +2,9 @@
   <div class="flex flex-col items-center gap-4">
     <h1 class="text-2xl font-semibold">
       SV Dex
+      <span class="text-xs">
+        v0.1
+      </span>
     </h1>
     <div class="flex flex-col gap-2">
       <PokemonWrapper
