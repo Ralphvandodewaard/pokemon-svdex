@@ -7,18 +7,25 @@
         class="max-w-none"
       >
     </div>
-    <p>
-      {{ pokemon.name }}
-    </p>
+    <div class="flex flex-col">
+      <p>
+        {{ pokemon.name }}
+      </p>
+      <TypeWrapper type="grass" />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
 import { defineComponent, PropType, computed } from 'vue';
 import Pokemon from '@/models/Pokemon';
+import TypeWrapper from './TypeWrapper.vue';
 
 export default defineComponent({
   name: 'PokemonWrapper',
+  components: {
+    TypeWrapper
+  },
   props: {
     pokemon: {
       type: Object as PropType<Pokemon>,
