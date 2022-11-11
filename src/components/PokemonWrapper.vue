@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center gap-2">
-    <div class="flex justify-center items-center w-20 h-20 rounded-lg overflow-hidden">
+    <div class="flex justify-center items-center w-20 h-20 border border-black rounded-lg overflow-hidden">
       <img
         :alt="pokemon.name"
         :src="getImage"
