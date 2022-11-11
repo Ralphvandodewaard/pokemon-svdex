@@ -1,5 +1,6 @@
 interface Pokemon {
-  name: string
+  name: string,
+  types: string[]
 }
 
 export default Pokemon;

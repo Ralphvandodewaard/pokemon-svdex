@@ -11,7 +11,13 @@
       <p>
         {{ pokemon.name }}
       </p>
-      <TypeWrapper type="grass" />
+      <div class="flex gap-0.5">
+        <TypeWrapper
+          v-for="pokemonType in pokemon.types"
+          :key="pokemonType"
+          :type="pokemonType"
+        />
+      </div>
     </div>
   </div>
 </template>
