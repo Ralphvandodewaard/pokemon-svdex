@@ -1,417 +1,418 @@
 import Pokemon from '@/models/Pokemon';
+import types from './types';
 
 const pokemon: Pokemon[] = [
   {
     name: 'Sprigatito',
-    types: ['Grass']
+    types: [types.grass]
   },
   {
     name: 'Floragato',
-    types: ['Grass']
+    types: [types.grass]
   },
   {
     name: 'Meowscarada',
-    types: ['Grass', 'Dark']
+    types: [types.grass, types.dark]
   },
   {
     name: 'Fuecoco',
-    types: ['Fire']
+    types: [types.fire]
   },
   {
     name: 'Crocalor',
-    types: ['Fire']
+    types: [types.fire]
   },
   {
     name: 'Skeledirge',
-    types: ['Fire', 'Ghost']
+    types: [types.fire, types.ghost]
   },
   {
     name: 'Quaxly',
-    types: ['Water']
+    types: [types.water]
   },
   {
     name: 'Quaxwell',
-    types: ['Water']
+    types: [types.water]
   },
   {
     name: 'Quaquaval',
-    types: ['Water', 'Fighting']
+    types: [types.water, types.fighting]
   },
   {
     name: 'Lechonk',
-    types: ['Normal']
+    types: [types.normal]
   },
   {
     name: 'Oinkologne',
-    types: ['Normal']
+    types: [types.normal]
   },
   {
     name: 'Dundunsparce',
-    types: ['Normal']
+    types: [types.normal]
   },
   {
     name: 'Tarountula',
-    types: ['Bug']
+    types: [types.bug]
   },
   {
     name: 'Spidops',
-    types: ['Bug']
+    types: [types.bug]
   },
   {
     name: 'Nymble',
-    types: ['Bug']
+    types: [types.bug]
   },
   {
     name: 'Lokix',
-    types: ['Bug', 'Dark']
+    types: [types.bug, types.dark]
   },
   {
     name: 'Rellor',
-    types: ['Bug']
+    types: [types.bug]
   },
   {
     name: 'Rabsca',
-    types: ['Bug', 'Psychic']
+    types: [types.bug, types.psychic]
   },
   {
     name: 'Greavard',
-    types: ['Ghost']
+    types: [types.ghost]
   },
   {
     name: 'Houndstone',
-    types: ['Ghost']
+    types: [types.ghost]
   },
   {
     name: 'Flittle',
-    types: ['Psychic']
+    types: [types.psychic]
   },
   {
     name: 'Espartha',
-    types: ['Psychic']
+    types: [types.psychic]
   },
   {
     name: 'Firagiraf',
-    types: ['Normal', 'Psychic']
+    types: [types.normal, types.psychic]
   },
   {
     name: 'Wiglett',
-    types: ['Water']
+    types: [types.water]
   },
   {
     name: 'Wugtrio',
-    types: ['Water']
+    types: [types.water]
   },
   {
     name: 'Dondozo',
-    types: ['Water']
+    types: [types.water]
   },
   {
     name: 'Veluza',
-    types: ['Water', 'Psychic']
+    types: [types.water, types.psychic]
   },
   {
     name: 'Finizen',
-    types: ['Water']
+    types: [types.water]
   },
   {
     name: 'Palafin',
-    types: ['Water']
+    types: [types.water]
   },
   {
     name: 'Smoliv',
-    types: ['Grass', 'Normal']
+    types: [types.grass, types.normal]
   },
   {
     name: 'Dolliv',
-    types: ['Grass', 'Normal']
+    types: [types.grass, types.normal]
   },
   {
     name: 'Arboliva',
-    types: ['Grass', 'Normal']
+    types: [types.grass, types.normal]
   },
   {
     name: 'Capsakid',
-    types: ['Grass']
+    types: [types.grass]
   },
   {
     name: 'Scovillain',
-    types: ['Grass', 'Fire']
+    types: [types.grass, types.fire]
   },
   {
     name: 'Tadbulb',
-    types: ['Electric']
+    types: [types.electric]
   },
   {
     name: 'Bellibolt',
-    types: ['Electric']
+    types: [types.electric]
   },
   {
     name: 'Varoom',
-    types: ['Steel', 'Poison']
+    types: [types.steel, types.poison]
   },
   {
     name: 'Revavroom',
-    types: ['Steel', 'Poison']
+    types: [types.steel, types.poison]
   },
   {
     name: 'Orthworm',
-    types: ['Steel']
+    types: [types.steel]
   },
   {
     name: 'Tandemous',
-    types: ['Normal']
+    types: [types.normal]
   },
   {
     name: 'Maushold',
-    types: ['Normal']
+    types: [types.normal]
   },
   {
     name: 'Cetoddle',
-    types: ['Ice']
+    types: [types.ice]
   },
   {
     name: 'Cetitan',
-    types: ['Ice']
+    types: [types.ice]
   },
   {
     name: 'Arbolovia',
-    types: ['Dragon', 'Ice']
+    types: [types.dragon, types.ice]
   },
   {
     name: 'Arctibax',
-    types: ['Dragon', 'Ice']
+    types: [types.dragon, types.ice]
   },
   {
     name: 'Baxcalibur',
-    types: ['Dragon', 'Ice']
+    types: [types.dragon, types.ice]
   },
   {
     name: 'Tatsugiri',
-    types: ['Dragon', 'Water']
+    types: [types.dragon, types.water]
   },
   {
     name: 'Cyclizar',
-    types: ['Dragon', 'Normal']
+    types: [types.dragon, types.normal]
   },
   {
     name: 'Pawmi',
-    types: ['Electric']
+    types: [types.electric]
   },
   {
     name: 'Pawmo',
-    types: ['Electric', 'Fighting']
+    types: [types.electric, types.fighting]
   },
   {
     name: 'Pawmot',
-    types: ['Electric', 'Fighting']
+    types: [types.electric, types.fighting]
   },
   {
     name: 'Wattrel',
-    types: ['Electric', 'Flying']
+    types: [types.electric, types.flying]
   },
   {
     name: 'Kilowattrel',
-    types: ['Electric', 'Flying']
+    types: [types.electric, types.flying]
   },
   {
     name: 'Bombirdier',
-    types: ['Flying', 'Dark']
+    types: [types.flying, types.dark]
   },
   {
     name: 'Squawkability',
-    types: ['Normal', 'Flying']
+    types: [types.normal, types.flying]
   },
   {
     name: 'Flamigo',
-    types: ['Flying', 'Fighting']
+    types: [types.flying, types.fighting]
   },
   {
     name: 'Klawf',
-    types: ['Rock']
+    types: [types.rock]
   },
   {
     name: 'Nacli',
-    types: ['Rock']
+    types: [types.rock]
   },
   {
     name: 'Naclistack',
-    types: ['Rock']
+    types: [types.rock]
   },
   {
     name: 'Garganacl',
-    types: ['Rock']
+    types: [types.rock]
   },
   {
     name: 'Glimmet',
-    types: ['Rock', 'Poison']
+    types: [types.rock, types.poison]
   },
   {
     name: 'Glimmora',
-    types: ['Rock', 'Poison']
+    types: [types.rock, types.poison]
   },
   {
     name: 'Shroodle',
-    types: ['Poison', 'Normal']
+    types: [types.poison, types.normal]
   },
   {
     name: 'Grafaiai',
-    types: ['Poison', 'Normal']
+    types: [types.poison, types.normal]
   },
   {
     name: 'Fidough',
-    types: ['Fairy']
+    types: [types.fairy]
   },
   {
     name: 'Dachsbun',
-    types: ['Fairy']
+    types: [types.fairy]
   },
   {
     name: 'Maschiff',
-    types: ['Dark']
+    types: [types.dark]
   },
   {
     name: 'Mabosstiff',
-    types: ['Dark']
+    types: [types.dark]
   },
   {
     name: 'Bramblin',
-    types: ['Grass', 'Ghost']
+    types: [types.grass, types.ghost]
   },
   {
     name: 'Brambleghast',
-    types: ['Grass', 'Ghost']
+    types: [types.grass, types.ghost]
   },
   {
     name: 'Gimmighoul',
-    types: ['Ghost']
+    types: [types.ghost]
   },
   {
     name: 'Gholdengo',
-    types: ['Steel', 'Ghost']
+    types: [types.steel, types.ghost]
   },
   {
     name: 'Great Tusk',
-    types: ['Ground', 'Fighting']
+    types: [types.ground, types.fighting]
   },
   {
     name: 'Brute Bonnet',
-    types: ['Grass', 'Dark']
+    types: [types.grass, types.dark]
   },
   {
     name: 'Sandy Shocks',
-    types: ['Electric', 'Ground']
+    types: [types.electric, types.ground]
   },
   {
     name: 'Scream Tail',
-    types: ['Fairy', 'Psychic']
+    types: [types.fairy, types.psychic]
   },
   {
     name: 'Flutter Mane',
-    types: ['Ghost', 'Fairy']
+    types: [types.ghost, types.fairy]
   },
   {
     name: 'Slither Wing',
-    types: ['Bug', 'Fighting']
+    types: [types.bug, types.fighting]
   },
   {
     name: 'Roaring Moon',
-    types: ['Dragon', 'Dark']
+    types: [types.dragon, types.dark]
   },
   {
     name: 'Iron Treads',
-    types: ['Ground', 'Steel']
+    types: [types.ground, types.steel]
   },
   {
     name: 'Iron Moth',
-    types: ['Fire', 'Poison']
+    types: [types.fire, types.poison]
   },
   {
     name: 'Iron Hands',
-    types: ['Fighting', 'Electric']
+    types: [types.fighting, types.electric]
   },
   {
     name: 'Iron Jugulis',
-    types: ['Dark', 'Flying']
+    types: [types.dark, types.flying]
   },
   {
     name: 'Iron Thorns',
-    types: ['Rock', 'Electric']
+    types: [types.rock, types.electric]
   },
   {
     name: 'Iron Bundle',
-    types: ['Ice', 'Water']
+    types: [types.ice, types.water]
   },
   {
     name: 'Iron Valiant',
-    types: ['Fairy', 'Fighting']
+    types: [types.fairy, types.fighting]
   },
   {
     name: 'Ting-Lu',
-    types: ['Dark', 'Ground']
+    types: [types.dark, types.ground]
   },
   {
     name: 'Chien-Pao',
-    types: ['Dark', 'Ice']
+    types: [types.dark, types.ice]
   },
   {
     name: 'Wo-Chien',
-    types: ['Dark', 'Grass']
+    types: [types.dark, types.grass]
   },
   {
     name: 'Chi-Yu',
-    types: ['Dark', 'Fire']
+    types: [types.dark, types.fire]
   },
   {
     name: 'Koraidon',
-    types: ['Fighting', 'Dragon']
+    types: [types.fighting, types.dragon]
   },
   {
     name: 'Miraidon',
-    types: ['Electric', 'Dragon']
+    types: [types.electric, types.dragon]
   },
   {
     name: 'Tinkatink',
-    types: ['Fairy', 'Steel']
+    types: [types.fairy, types.steel]
   },
   {
     name: 'Tinkatuff',
-    types: ['Fairy', 'Steel']
+    types: [types.fairy, types.steel]
   },
   {
     name: 'Tinkaton',
-    types: ['Fairy', 'Steel']
+    types: [types.fairy, types.steel]
   },
   {
     name: 'Charcadet',
-    types: ['Fire']
+    types: [types.fire]
   },
   {
     name: 'Armarouge',
-    types: ['Fire', 'Psychic']
+    types: [types.fire, types.psychic]
   },
   {
     name: 'Ceruledge',
-    types: ['Fire', 'Ghost']
+    types: [types.fire, types.ghost]
   },
   {
     name: 'Toedscool',
-    types: ['Ground', 'Grass']
+    types: [types.ground, types.grass]
   },
   {
     name: 'Toedscruel',
-    types: ['Ground', 'Grass']
+    types: [types.ground, types.grass]
   },
   {
     name: 'Kingambit',
-    types: ['Dark', 'Steel']
+    types: [types.dark, types.steel]
   },
   {
     name: 'Clodsire',
-    types: ['Poison', 'Ground']
+    types: [types.poison, types.ground]
   },
   {
     name: 'Anihilape',
-    types: ['Fighting', 'Ghost']
+    types: [types.fighting, types.ghost]
   }
 ];
 

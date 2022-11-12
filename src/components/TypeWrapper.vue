@@ -3,8 +3,8 @@
     :class="getBackgroundClass"
     class="flex justify-center w-16 border border-black rounded"
   >
-    <p class="text-sm text-white">
-      {{ type }}
+    <p class="text-sm text-white capitalize">
+      {{ pokemonType }}
     </p>
   </div>
 </template>
@@ -15,14 +15,14 @@ import { defineComponent, computed } from 'vue';
 export default defineComponent({
   name: 'TypeWrapper',
   props: {
-    type: {
+    pokemonType: {
       type: String,
       required: true
     }
   },
   setup(props) {
     const getBackgroundClass = computed<string>(() => {
-      return `bg-${props.type.toLowerCase()}`;
+      return `bg-${props.pokemonType.toLowerCase()}`;
     });
 
     return {

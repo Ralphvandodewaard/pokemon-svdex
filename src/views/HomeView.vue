@@ -23,6 +23,7 @@ import pokemon from '@/assets/pokemon';
 import SearchInput from '@/components/SearchInput.vue';
 import PokemonWrapper from '@/components/PokemonWrapper.vue';
 import Pokemon from '@/models/Pokemon';
+import PokemonType from '@/models/PokemonType';
 
 export default defineComponent({
   name: 'HomeView',
@@ -36,7 +37,7 @@ export default defineComponent({
     const filteredPokemon = computed<Pokemon[]>(() => {
       return pokemon.filter((pokemon: Pokemon) => {
         return pokemon.name.toLowerCase().includes(searchValue.value.toLowerCase()) ||
-        pokemon.types.some((type: string) => type.toLowerCase() === searchValue.value.toLowerCase());
+        pokemon.types.some((pokemonType: PokemonType) => pokemonType.label.toLowerCase() === searchValue.value.toLowerCase());
       });
     });
 

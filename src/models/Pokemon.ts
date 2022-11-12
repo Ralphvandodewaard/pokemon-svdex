@@ -1,6 +1,8 @@
+import PokemonType from './PokemonType';
+
 interface Pokemon {
   name: string,
-  types: string[]
+  types: PokemonType[]
 }
 
 export default Pokemon;
