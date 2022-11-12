@@ -1,111 +1,113 @@
+import typeLabels from './typeLabels';
+
 const types = {
   normal: {
-    label: 'normal',
-    immuneTo: ['ghost'],
+    label: typeLabels.normal,
+    immuneTo: [typeLabels.ghost],
     resists: [],
-    weakTo: ['fighting']
+    weakTo: [typeLabels.fighting]
   },
   fire: {
-    label: 'fire',
+    label: typeLabels.fire,
     immuneTo: [],
-    resists: ['fire', 'grass', 'ice', 'bug', 'steel', 'fairy'],
-    weakTo: ['water', 'ground', 'rock']
+    resists: [typeLabels.fire, typeLabels.grass, typeLabels.ice, typeLabels.bug, typeLabels.steel, typeLabels.fairy],
+    weakTo: [typeLabels.water, typeLabels.ground, typeLabels.rock]
   },
   water: {
-    label: 'water',
+    label: typeLabels.water,
     immuneTo: [],
-    resists: ['fire', 'water', 'ice', 'steel'],
-    weakTo: ['electric', 'grass']
+    resists: [typeLabels.fire, typeLabels.water, typeLabels.ice, typeLabels.steel],
+    weakTo: [typeLabels.electric, typeLabels.grass]
   },
   electric: {
-    label: 'electric',
+    label: typeLabels.electric,
     immuneTo: [],
-    resists: ['electric', 'flying', 'steel'],
-    weakTo: ['ground']
+    resists: [typeLabels.electric, typeLabels.flying, typeLabels.steel],
+    weakTo: [typeLabels.ground]
   },
   grass: {
-    label: 'grass',
+    label: typeLabels.grass,
     immuneTo: [],
-    resists: ['water', 'electric', 'grass', 'ground'],
-    weakTo: ['fire', 'ice', 'poison', 'flying', 'bug']
+    resists: [typeLabels.water, typeLabels.electric, typeLabels.grass, typeLabels.ground],
+    weakTo: [typeLabels.fire, typeLabels.ice, typeLabels.poison, typeLabels.flying, typeLabels.bug]
   },
   ice: {
-    label: 'ice',
+    label: typeLabels.ice,
     immuneTo: [],
-    resists: ['ice'],
-    weakTo: ['fire', 'fighting', 'rock', 'steel']
+    resists: [typeLabels.ice],
+    weakTo: [typeLabels.fire, typeLabels.fighting, typeLabels.rock, typeLabels.steel]
   },
   fighting: {
-    label: 'fighting',
+    label: typeLabels.fighting,
     immuneTo: [],
-    resists: ['bug', 'rock', 'dark'],
-    weakTo: ['flying', 'psychic', 'fairy']
+    resists: [typeLabels.bug, typeLabels.rock, typeLabels.dark],
+    weakTo: [typeLabels.flying, typeLabels.psychic, typeLabels.fairy]
   },
   poison: {
-    label: 'poison',
+    label: typeLabels.poison,
     immuneTo: [],
-    resists: ['grass', 'fighting', 'poison', 'bug', 'fairy'],
-    weakTo: ['ground', 'psychic']
+    resists: [typeLabels.grass, typeLabels.fighting, typeLabels.poison, typeLabels.bug, typeLabels.fairy],
+    weakTo: [typeLabels.ground, typeLabels.psychic]
   },
   ground: {
-    label: 'ground',
-    immuneTo: ['electric'],
-    resists: ['poison', 'rock'],
-    weakTo: ['water', 'grass', 'ice']
+    label: typeLabels.ground,
+    immuneTo: [typeLabels.electric],
+    resists: [typeLabels.poison, typeLabels.rock],
+    weakTo: [typeLabels.water, typeLabels.grass, typeLabels.ice]
   },
   flying: {
-    label: 'flying',
-    immuneTo: ['ground'],
-    resists: ['grass', 'fighting', 'bug'],
-    weakTo: ['electric', 'ice', 'rock']
+    label: typeLabels.flying,
+    immuneTo: [typeLabels.ground],
+    resists: [typeLabels.grass, typeLabels.fighting, typeLabels.bug],
+    weakTo: [typeLabels.electric, typeLabels.ice, typeLabels.rock]
   },
   psychic: {
-    label: 'psychic',
+    label: typeLabels.psychic,
     immuneTo: [],
-    resists: ['fighting', 'psychic'],
-    weakTo: ['bug', 'ghost', 'dark']
+    resists: [typeLabels.fighting, typeLabels.psychic],
+    weakTo: [typeLabels.bug, typeLabels.ghost, typeLabels.dark]
   },
   bug: {
-    label: 'bug',
+    label: typeLabels.bug,
     immuneTo: [],
-    resists: ['grass', 'fighting', 'ground'],
-    weakTo: ['fire', 'flying', 'rock']
+    resists: [typeLabels.grass, typeLabels.fighting, typeLabels.ground],
+    weakTo: [typeLabels.fire, typeLabels.flying, typeLabels.rock]
   },
   rock: {
-    label: 'rock',
+    label: typeLabels.rock,
     immuneTo: [],
-    resists: ['normal', 'fire', 'poison', 'flying'],
-    weakTo: ['water', 'grass', 'fighting', 'ground', 'steel']
+    resists: [typeLabels.normal, typeLabels.fire, typeLabels.poison, typeLabels.flying],
+    weakTo: [typeLabels.water, typeLabels.grass, typeLabels.fighting, typeLabels.ground, typeLabels.steel]
   },
   ghost: {
-    label: 'ghost',
-    immuneTo: ['normal', 'fighting'],
-    resists: ['poison', 'bug'],
-    weakTo: ['ghost', 'dark']
+    label: typeLabels.ghost,
+    immuneTo: [typeLabels.normal, typeLabels.fighting],
+    resists: [typeLabels.poison, typeLabels.bug],
+    weakTo: [typeLabels.ghost, typeLabels.dark]
   },
   dragon: {
-    label: 'dragon',
+    label: typeLabels.dragon,
     immuneTo: [],
-    resists: ['fire', 'water', 'electric', 'grass'],
-    weakTo: ['ice', 'dragon', 'fairy']
+    resists: [typeLabels.fire, typeLabels.water, typeLabels.electric, typeLabels.grass],
+    weakTo: [typeLabels.ice, typeLabels.dragon, typeLabels.fairy]
   },
   dark: {
-    label: 'dark',
-    immuneTo: ['psychic'],
-    resists: ['ghost', 'dark'],
-    weakTo: ['fighting', 'bug', 'fairy']
+    label: typeLabels.dark,
+    immuneTo: [typeLabels.psychic],
+    resists: [typeLabels.ghost, typeLabels.dark],
+    weakTo: [typeLabels.fighting, typeLabels.bug, typeLabels.fairy]
   },
   steel: {
-    label: 'steel',
-    immuneTo: ['poison'],
-    resists: ['normal', 'grass', 'ice', 'flying', 'psychic', 'bug', 'rock', 'dragon', 'steel', 'fairy'],
-    weakTo: ['fire', 'fighting', 'ground']
+    label: typeLabels.steel,
+    immuneTo: [typeLabels.poison],
+    resists: [typeLabels.normal, typeLabels.grass, typeLabels.ice, typeLabels.flying, typeLabels.psychic, typeLabels.bug, typeLabels.rock, typeLabels.dragon, typeLabels.steel, typeLabels.fairy],
+    weakTo: [typeLabels.fire, typeLabels.fighting, typeLabels.ground]
   },
   fairy: {
-    label: 'fairy',
-    immuneTo: ['dragon'],
-    resists: ['fighting', 'bug', 'dark'],
-    weakTo: ['poison', 'steel']
+    label: typeLabels.fairy,
+    immuneTo: [typeLabels.dragon],
+    resists: [typeLabels.fighting, typeLabels.bug, typeLabels.dark],
+    weakTo: [typeLabels.poison, typeLabels.steel]
   }
 };
 
