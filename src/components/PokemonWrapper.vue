@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center gap-2">
+  <div class="flex items-start gap-2">
     <div class="flex justify-center items-center w-20 h-20 border border-black rounded-lg overflow-hidden">
       <img
         :alt="pokemon.name"
@@ -7,17 +7,20 @@
         class="max-w-none"
       >
     </div>
-    <div class="flex flex-col">
-      <p>
-        {{ pokemon.name }}
-      </p>
-      <div class="flex gap-0.5">
-        <TypeWrapper
-          v-for="pokemonType in pokemon.types"
-          :key="pokemonType.label"
-          :pokemon-type="pokemonType.label"
-        />
+    <div class="flex flex-col gap-2">
+      <div class="flex flex-col">
+        <p>
+          {{ pokemon.name }}
+        </p>
+        <div class="flex gap-0.5">
+          <TypeWrapper
+            v-for="pokemonType in pokemon.types"
+            :key="pokemonType.label"
+            :pokemon-type="pokemonType.label"
+          />
+        </div>
       </div>
+      <WeaknessesWrapper :pokemon-types="pokemon.types" />
     </div>
   </div>
 </template>
@@ -26,11 +29,13 @@
 import { defineComponent, PropType, computed } from 'vue';
 import Pokemon from '@/models/Pokemon';
 import TypeWrapper from './TypeWrapper.vue';
+import WeaknessesWrapper from './WeaknessesWrapper.vue';
 
 export default defineComponent({
   name: 'PokemonWrapper',
   components: {
-    TypeWrapper
+    TypeWrapper,
+    WeaknessesWrapper
   },
   props: {
     pokemon: {

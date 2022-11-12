@@ -2,7 +2,7 @@
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   safelist: [
-    { pattern: /bg-(normal|fighting|flying|poison|ground|rock|bug|ghost|steel|fire|water|grass|electric|psychic|ice|dragon|dark|fairy)/ }
+    { pattern: /bg-(normal|fighting|flying|poison|ground|rock|bug|ghost|steel|fire|water|grass|electric|psychic|ice|dragon|dark|fairy|fourTimes|twoTimes|halfTimes|quarterTimes|immune)/ }
   ],
   theme: {
     extend: {
@@ -25,7 +25,12 @@ module.exports = {
         ice: '#98d8d8',
         dragon: '#7038f8',
         dark: '#705848',
-        fairy: '#ee99ac'
+        fairy: '#ee99ac',
+        fourTimes: '#73d216',
+        twoTimes: '#4e9a06',
+        halfTimes: '#a40000',
+        quarterTimes: '#7c0000',
+        immune: '#2e3436'
       }
     }
   },

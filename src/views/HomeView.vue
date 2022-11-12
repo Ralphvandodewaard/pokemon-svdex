@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col items-center gap-4 w-full max-w-xs">
+  <div class="flex flex-col items-center gap-4">
     <SearchInput v-model="searchValue" />
     <div
       v-if="filteredPokemon.length > 0"
-      class="flex flex-col gap-2"
+      class="flex flex-col gap-4"
     >
       <PokemonWrapper
         v-for="pokemon in filteredPokemon"
