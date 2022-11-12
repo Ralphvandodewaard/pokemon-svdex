@@ -28,7 +28,10 @@ export default defineComponent({
     const searchValue = ref('');
 
     const filteredPokemon = computed<Pokemon[]>(() => {
-      return pokemon.filter((pokemon: Pokemon) => pokemon.name.toLowerCase().includes(searchValue.value.toLowerCase()) || pokemon.types.some((type: string) => type.toLowerCase() === searchValue.value.toLowerCase()));
+      return pokemon.filter((pokemon: Pokemon) => {
+        return pokemon.name.toLowerCase().includes(searchValue.value.toLowerCase()) ||
+        pokemon.types.some((type: string) => type.toLowerCase() === searchValue.value.toLowerCase());
+      });
     });
 
     return {
