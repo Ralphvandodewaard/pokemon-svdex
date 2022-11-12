@@ -3,7 +3,7 @@
     <h1 class="text-2xl font-semibold">
       SV Dex
       <span class="text-xs">
-        v0.1
+        v0.2
       </span>
     </h1>
     <RouterView/>
