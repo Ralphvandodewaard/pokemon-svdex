@@ -1,13 +1,19 @@
 <template>
   <div class="flex flex-col items-center gap-4 w-full max-w-xs">
     <SearchInput v-model="searchValue" />
-    <div class="flex flex-col gap-2">
+    <div
+      v-if="filteredPokemon.length > 0"
+      class="flex flex-col gap-2"
+    >
       <PokemonWrapper
         v-for="pokemon in filteredPokemon"
         :key="pokemon.name"
         :pokemon="pokemon"
       />
     </div>
+    <p v-else>
+      No results found
+    </p>
   </div>
 </template>
 
