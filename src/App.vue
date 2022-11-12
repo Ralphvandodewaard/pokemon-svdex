@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center gap-4 min-h-screen p-8 bg-background text-white">
+  <div class="flex flex-col items-center gap-4 h-screen p-8 bg-background text-white overflow-y-scroll">
     <h1 class="text-2xl font-semibold">
       SV Dex
       <span class="text-xs">
