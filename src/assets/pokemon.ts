@@ -55,7 +55,8 @@ const pokemon: Pokemon[] = [
   {
     name: 'Oinkologne',
     types: [types.normal],
-    nationalDexNumber: 916
+    nationalDexNumber: 916,
+    alternateForms: ['916-2']
   },
   {
     name: 'Dundunsparce',
@@ -145,7 +146,8 @@ const pokemon: Pokemon[] = [
   {
     name: 'Palafin',
     types: [types.water],
-    nationalDexNumber: 934
+    nationalDexNumber: 934,
+    alternateForms: ['934-2']
   },
   {
     name: 'Smoliv',
@@ -205,7 +207,8 @@ const pokemon: Pokemon[] = [
   {
     name: 'Maushold',
     types: [types.normal],
-    nationalDexNumber: 946
+    nationalDexNumber: 946,
+    alternateForms: ['946-2']
   },
   {
     name: 'Cetoddle',
@@ -235,7 +238,8 @@ const pokemon: Pokemon[] = [
   {
     name: 'Tatsugiri',
     types: [types.dragon, types.water],
-    nationalDexNumber: 952
+    nationalDexNumber: 952,
+    alternateForms: ['952-2', '952-3']
   },
   {
     name: 'Cyclizar',
@@ -275,7 +279,8 @@ const pokemon: Pokemon[] = [
   {
     name: 'Squawkability',
     types: [types.normal, types.flying],
-    nationalDexNumber: 960
+    nationalDexNumber: 960,
+    alternateForms: ['960-2', '960-3', '960-4']
   },
   {
     name: 'Flamigo',
@@ -355,7 +360,8 @@ const pokemon: Pokemon[] = [
   {
     name: 'Gimmighoul',
     types: [types.ghost],
-    nationalDexNumber: 976
+    nationalDexNumber: 976,
+    alternateForms: ['976-2']
   },
   {
     name: 'Gholdengo',
@@ -470,13 +476,15 @@ const pokemon: Pokemon[] = [
     name: 'Koraidon',
     types: [types.fighting, types.dragon],
     nationalDexNumber: 998,
-    scarletExclusive: true
+    scarletExclusive: true,
+    alternateForms: ['998-2']
   },
   {
     name: 'Miraidon',
     types: [types.electric, types.dragon],
     nationalDexNumber: 999,
-    violetExclusive: true
+    violetExclusive: true,
+    alternateForms: ['999-2']
   },
   {
     name: 'Tinkatink',
