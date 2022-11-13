@@ -2,19 +2,33 @@
   <div class="flex items-start gap-2">
     <div class="flex justify-center items-center flex-shrink-0 w-20 h-20 bg-neutral-800 border border-black rounded-lg overflow-hidden">
       <img
-        :alt="pokemon.name"
         :src="getImage"
+        :alt="pokemon.name"
         class="w-full h-full"
       >
     </div>
     <div class="flex flex-col gap-4">
       <div class="flex flex-col gap-1">
-        <p class="text-lg leading-5 font-semibold">
-          <span class="text-xs font-normal">
-            #{{ pokemon.nationalDexNumber }}
-          </span>
-          {{ pokemon.name }}
-        </p>
+        <div class="flex items-center gap-2">
+          <p class="text-lg leading-5 font-semibold">
+            <span class="text-xs font-normal">
+              #{{ pokemon.nationalDexNumber }}
+            </span>
+            {{ pokemon.name }}
+          </p>
+          <img
+            v-if="pokemon.scarletExclusive"
+            src="@/assets/scarlet-logo-small.png"
+            alt="Pokemon Scarlet logo small"
+            class="h-3"
+          />
+          <img
+            v-if="pokemon.violetExclusive"
+            src="@/assets/violet-logo-small.png"
+            alt="Pokemon Scarlet logo small"
+            class="h-3"
+          />
+        </div>
         <div class="flex gap-0.5">
           <TypeWrapper
             v-for="pokemonType in pokemon.types"

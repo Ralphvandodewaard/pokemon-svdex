@@ -365,72 +365,86 @@ const pokemon: Pokemon[] = [
   {
     name: 'Great Tusk',
     types: [types.ground, types.fighting],
-    nationalDexNumber: 978
+    nationalDexNumber: 978,
+    scarletExclusive: true
   },
   {
     name: 'Brute Bonnet',
     types: [types.grass, types.dark],
-    nationalDexNumber: 979
+    nationalDexNumber: 979,
+    scarletExclusive: true
   },
   {
     name: 'Sandy Shocks',
     types: [types.electric, types.ground],
-    nationalDexNumber: 981
+    nationalDexNumber: 981,
+    scarletExclusive: true
   },
   {
     name: 'Scream Tail',
     types: [types.fairy, types.psychic],
-    nationalDexNumber: 982
+    nationalDexNumber: 982,
+    scarletExclusive: true
   },
   {
     name: 'Flutter Mane',
     types: [types.ghost, types.fairy],
-    nationalDexNumber: 983
+    nationalDexNumber: 983,
+    scarletExclusive: true
   },
   {
     name: 'Slither Wing',
     types: [types.bug, types.fighting],
-    nationalDexNumber: 984
+    nationalDexNumber: 984,
+    scarletExclusive: true
   },
   {
     name: 'Roaring Moon',
     types: [types.dragon, types.dark],
-    nationalDexNumber: 985
+    nationalDexNumber: 985,
+    scarletExclusive: true
   },
   {
     name: 'Iron Treads',
     types: [types.ground, types.steel],
-    nationalDexNumber: 986
+    nationalDexNumber: 986,
+    violetExclusive: true
   },
   {
     name: 'Iron Moth',
     types: [types.fire, types.poison],
-    nationalDexNumber: 988
+    nationalDexNumber: 988,
+    violetExclusive: true
   },
   {
     name: 'Iron Hands',
     types: [types.fighting, types.electric],
-    nationalDexNumber: 989
+    nationalDexNumber: 989,
+    violetExclusive: true
   },
   {
     name: 'Iron Jugulis',
     types: [types.dark, types.flying],
-    nationalDexNumber: 990
+    nationalDexNumber: 990,
+    violetExclusive: true
   },
   {
     name: 'Iron Thorns',
     types: [types.rock, types.electric],
-    nationalDexNumber: 991
+    nationalDexNumber: 991,
+    violetExclusive: true
   },
   {
     name: 'Iron Bundle',
     types: [types.ice, types.water],
-    nationalDexNumber: 992
+    nationalDexNumber: 992,
+    violetExclusive: true
   },
   {
     name: 'Iron Valiant',
     types: [types.fairy, types.fighting],
-    nationalDexNumber: 993
+    nationalDexNumber: 993,
+    violetExclusive: true
   },
   {
     name: 'Ting-Lu',
@@ -455,12 +469,14 @@ const pokemon: Pokemon[] = [
   {
     name: 'Koraidon',
     types: [types.fighting, types.dragon],
-    nationalDexNumber: 998
+    nationalDexNumber: 998,
+    scarletExclusive: true
   },
   {
     name: 'Miraidon',
     types: [types.electric, types.dragon],
-    nationalDexNumber: 999
+    nationalDexNumber: 999,
+    violetExclusive: true
   },
   {
     name: 'Tinkatink',
@@ -485,12 +501,14 @@ const pokemon: Pokemon[] = [
   {
     name: 'Armarouge',
     types: [types.fire, types.psychic],
-    nationalDexNumber: 1004
+    nationalDexNumber: 1004,
+    scarletExclusive: true
   },
   {
     name: 'Ceruledge',
     types: [types.fire, types.ghost],
-    nationalDexNumber: 1005
+    nationalDexNumber: 1005,
+    violetExclusive: true
   },
   {
     name: 'Toedscool',
