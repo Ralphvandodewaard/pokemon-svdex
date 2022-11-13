@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-wrap gap-0.5 text-tiny bg-neutral-800">
+  <div class="flex flex-wrap gap-0.5 text-tiny bg-neutral-800 rounded">
     <div
       v-for="pokemonType in allPokemonTypes"
       :key="pokemonType.label"
