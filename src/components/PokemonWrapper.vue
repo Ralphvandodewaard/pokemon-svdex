@@ -10,6 +10,9 @@
     <div class="flex flex-col gap-2">
       <div class="flex flex-col">
         <p>
+          <span class="text-xs">
+            #{{ pokemon.nationalDexNumber }}
+          </span>
           {{ pokemon.name }}
         </p>
         <div class="flex gap-0.5">
