@@ -38,7 +38,9 @@ export default defineComponent({
       return pokemon.filter((pokemon: Pokemon) => {
         return pokemon.name.toLowerCase().includes(searchValue.value.toLowerCase()) ||
         pokemon.types.some((pokemonType: PokemonType) => pokemonType.label.toLowerCase() === searchValue.value.toLowerCase()) ||
-        pokemon.nationalDexNumber.toString().includes(searchValue.value.toLowerCase());
+        pokemon.nationalDexNumber.toString().includes(searchValue.value.toLowerCase()) ||
+        (pokemon.scarletExclusive && searchValue.value.toLowerCase() === 'scarlet') ||
+        (pokemon.violetExclusive && searchValue.value.toLowerCase() === 'violet');
       });
     });
 
