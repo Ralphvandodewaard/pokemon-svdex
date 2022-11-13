@@ -2,7 +2,8 @@ import PokemonType from './PokemonType';
 
 interface Pokemon {
   name: string,
-  types: PokemonType[]
+  types: PokemonType[],
+  nationalDexNumber: number,
 }
 
 export default Pokemon;
