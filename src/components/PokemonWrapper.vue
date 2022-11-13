@@ -7,10 +7,10 @@
         class="w-full h-full"
       >
     </div>
-    <div class="flex flex-col gap-2">
-      <div class="flex flex-col">
-        <p>
-          <span class="text-xs">
+    <div class="flex flex-col gap-4">
+      <div class="flex flex-col gap-1">
+        <p class="text-lg leading-5 font-semibold">
+          <span class="text-xs font-normal">
             #{{ pokemon.nationalDexNumber }}
           </span>
           {{ pokemon.name }}

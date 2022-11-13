@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sora: ['Sora']
+      },
+      fontSize: {
+        tiny: ['10px', '12px']
+      },
       colors: {
         background: '#2b2b2b',
         normal: '#a8a878',

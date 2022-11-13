@@ -1,9 +1,9 @@
 <template>
   <div
     :class="getBackgroundClass"
-    class="flex justify-center w-16 border border-black rounded"
+    class="flex justify-center w-16 py-0.5 border border-black rounded"
   >
-    <p class="text-sm text-white capitalize">
+    <p class="text-xs text-white capitalize">
       {{ pokemonType }}
     </p>
   </div>

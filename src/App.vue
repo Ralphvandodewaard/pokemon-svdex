@@ -1,8 +1,8 @@
 <template>
-  <div class="flex flex-col items-center gap-4 h-screen p-4 sm:p-8 bg-background text-white overflow-y-scroll">
+  <div class="flex flex-col items-center gap-4 h-screen p-4 sm:p-8 pb-8 sm:pb-16 bg-background text-white font-sora overflow-y-scroll">
     <h1 class="text-2xl font-semibold">
       SV Dex
-      <span class="text-xs">
+      <span class="text-xs font-normal">
         v0.2
       </span>
     </h1>
