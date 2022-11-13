@@ -1,10 +1,10 @@
 <template>
   <div class="flex items-start gap-2">
-    <div class="flex justify-center items-center flex-shrink-0 w-20 h-20 border border-black rounded-lg overflow-hidden">
+    <div class="flex justify-center items-center flex-shrink-0 w-20 h-20 bg-white border border-black rounded-lg overflow-hidden">
       <img
         :alt="pokemon.name"
         :src="getImage"
-        class="max-w-none"
+        class="w-full h-full"
       >
     </div>
     <div class="flex flex-col gap-2">
@@ -45,7 +45,7 @@ export default defineComponent({
   },
   setup(props) {
     const getImage = computed<string>(() => {
-      return require(`@/assets/sprites/${props.pokemon.name.toLowerCase()}.jpg`);
+      return require(`@/assets/sprites/${props.pokemon.nationalDexNumber}.png`);
     });
 
     return {
