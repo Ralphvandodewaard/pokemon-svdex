@@ -3,7 +3,7 @@
     <SearchInput v-model="searchValue" />
     <div
       v-if="filteredPokemon.length > 0"
-      class="flex flex-col gap-4"
+      class="flex flex-col gap-8"
     >
       <PokemonWrapper
         v-for="pokemon in filteredPokemon"
