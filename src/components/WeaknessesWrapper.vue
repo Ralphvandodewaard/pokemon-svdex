@@ -26,9 +26,9 @@
 </template>
 
 <script lang="ts">
+import { defineComponent, computed, PropType } from 'vue';
 import types from '@/assets/types';
 import PokemonType from '@/models/PokemonType';
-import { defineComponent, computed, PropType } from 'vue';
 
 export default defineComponent({
   name: 'WeaknessesWrapper',
