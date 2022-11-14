@@ -1,16 +1,16 @@
 <template>
-  <div class="flex flex-wrap gap-0.5 text-tiny bg-neutral-800 rounded">
+  <div class="flex flex-wrap gap-1 p-2 bg-neutral-800 text-tiny border border-black rounded">
     <div
       v-for="pokemonType in allPokemonTypes"
       :key="pokemonType.label"
-      class="flex flex-col"
+      class="flex flex-col gap-1"
     >
       <div
         :class="getTypeBackgroundClass(pokemonType.label)"
-        class="flex justify-center items-center w-8 h-8 border border-b-0 border-black rounded"
+        class="flex justify-center items-center w-8 h-8 border border-black rounded"
       >
         <p>
-          {{ pokemonType.label.substring(0, 3).toUpperCase() }}
+          {{ getFormattedTypeLabel(pokemonType.label) }}
         </p>
       </div>
       <div
@@ -43,6 +43,10 @@ export default defineComponent({
       return Object.values(types);
     });
 
+    function getFormattedTypeLabel(typeLabel: string): string {
+      return typeLabel.substring(0, 3).toUpperCase();
+    }
+
     function getTypeBackgroundClass(typeLabel: string): string {
       return `bg-types-${typeLabel.toLowerCase()}`;
     }
@@ -73,6 +77,7 @@ export default defineComponent({
 
     return {
       allPokemonTypes,
+      getFormattedTypeLabel,
       getTypeBackgroundClass,
       getWeaknessBackgroundClass,
       getDamageMultiplier
