@@ -36,7 +36,14 @@ module.exports = {
         twoTimes: '#4e9a06',
         halfTimes: '#a40000',
         quarterTimes: '#7c0000',
-        immune: '#2e3436'
+        immune: '#2e3436',
+        stats: {
+          low: '#FF7F0F',
+          average: '#FFDD57',
+          high: '#A0E515',
+          veryHigh: '#23CD5E',
+          ultraHigh: '#00C2B8'
+        }
       }
     }
   },

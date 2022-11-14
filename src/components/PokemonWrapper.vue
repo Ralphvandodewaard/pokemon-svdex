@@ -54,6 +54,9 @@
           />
         </div>
       </div>
+      <template v-if="pokemon.stats">
+        <StatsWrapper :stats="pokemon.stats" />
+      </template>
       <WeaknessesWrapper :pokemon-types="pokemon.types" />
     </div>
   </div>
@@ -63,12 +66,14 @@
 import { defineComponent, PropType, ref, computed } from 'vue';
 import Pokemon from '@/models/Pokemon';
 import TypeWrapper from './TypeWrapper.vue';
+import StatsWrapper from './StatsWrapper.vue';
 import WeaknessesWrapper from './WeaknessesWrapper.vue';
 
 export default defineComponent({
   name: 'PokemonWrapper',
   components: {
     TypeWrapper,
+    StatsWrapper,
     WeaknessesWrapper
   },
   props: {
