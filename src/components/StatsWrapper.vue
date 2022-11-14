@@ -5,7 +5,7 @@
       :key="index"
       class="flex items-center gap-4 h-6"
     >
-      <p class="w-14 text-right">
+      <p class="w-16 text-right">
         {{ getStatLabel(index) }}
       </p>
       <p class="w-5">
@@ -20,7 +20,7 @@
       </div>
     </div>
     <div class="flex items-center gap-4 h-6">
-      <p class="w-14 text-right">
+      <p class="w-16 text-right">
         Total
       </p>
       <p>
