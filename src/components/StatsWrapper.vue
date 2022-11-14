@@ -1,84 +1,101 @@
 <template>
-  <div class="flex gap-4 bg-neutral-800 text-xs rounded">
-    <div class="flex flex-col">
-      <div
-        v-for="stat in stats"
-        :key="stat.key"
-        class="flex justify-end items-center h-6 pl-1"
-      >
-        <p>
-          {{ stat.label }}
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col">
-      <div
-        v-for="stat in stats"
-        :key="stat.key"
-        class="flex justify-end items-center h-6"
-      >
-        <p>
-          {{ stat.value }}
-        </p>
-      </div>
-    </div>
-    <div class="flex flex-col flex-grow">
-      <div
-        v-for="stat in stats"
-        :key="stat.key"
-        class="flex items-center h-6"
-      >
+  <div class="flex flex-col pr-0.5 sm:pr-2 bg-neutral-800 text-xs border border-black rounded">
+    <div
+      v-for="(stat, index) in allStats"
+      :key="index"
+      class="flex items-center gap-4 h-6"
+    >
+      <p class="w-14 text-right">
+        {{ getStatLabel(index) }}
+      </p>
+      <p class="w-5">
+        {{ stat }}
+      </p>
+      <div class="flex-grow">
         <div
-          v-if="stat.key !== 'total'"
           :style=" { 'width': getBarWidth(stat) }"
           :class="getBarColorClass(stat)"
-          class="h-3 w-full rounded border border-black"
+          class="h-3 rounded border border-black"
         />
       </div>
+    </div>
+    <div class="flex items-center gap-4 h-6">
+      <p class="w-14 text-right">
+        Total
+      </p>
+      <p>
+        {{ totalStat }}
+      </p>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue';
-import Stat from '@/models/Stat';
+import { defineComponent, PropType, computed } from 'vue';
+import Stats from '@/models/Stats';
 
 export default defineComponent({
   name: 'StatsWrapper',
   props: {
     stats: {
-      type: Array as PropType<Stat[]>,
+      type: Object as PropType<Stats>,
       required: true
     }
   },
-  setup() {
-    function getBarWidth(stat: Stat): string {
-      if (stat.value) {
-        return `${(stat.value / 255) * 100}%`;
-      }
+  setup(props) {
+    const allStats = computed<number[]>(() => {
+      return Object.values(props.stats);
+    });
 
-      return '0';
-    }
+    const totalStat = computed<number>(() => {
+      return props.stats.hp +
+        props.stats.attack +
+        props.stats.defense +
+        props.stats.specialAttack +
+        props.stats.specialDefense +
+        props.stats.speed;
+    });
 
-    function getBarColorClass(stat: Stat): string {
-      if (stat.value) {
-        if (stat.value >= 150) {
-          return 'bg-stats-ultra-high';
-        } else if (stat.value >= 120) {
-          return 'bg-stats-very-high';
-        } else if (stat.value >= 90) {
-          return 'bg-stats-high';
-        } else if (stat.value >= 60) {
-          return 'bg-stats-average';
-        } else {
-          return 'bg-stats-low';
+    function getStatLabel(index: number): string {
+      switch (index) {
+        case 0:
+          return 'HP';
+        case 1:
+          return 'Attack';
+        case 2:
+          return 'Defense';
+        case 3:
+          return 'Sp. Atk';
+        case 4:
+          return 'Sp. Def';
+        default: {
+          return 'Speed';
         }
       }
+    }
 
-      return 'bg-black';
+    function getBarWidth(stat: number): string {
+      return `${(stat / 255) * 100}%`;
+    }
+
+    function getBarColorClass(stat: number): string {
+      if (stat >= 150) {
+        return 'bg-stats-ultra-high';
+      } else if (stat >= 120) {
+        return 'bg-stats-very-high';
+      } else if (stat >= 90) {
+        return 'bg-stats-high';
+      } else if (stat >= 60) {
+        return 'bg-stats-average';
+      } else {
+        return 'bg-stats-low';
+      }
     }
 
     return {
+      allStats,
+      totalStat,
+      getStatLabel,
       getBarWidth,
       getBarColorClass
     };

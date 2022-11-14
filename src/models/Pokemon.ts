@@ -1,11 +1,11 @@
 import PokemonType from './PokemonType';
-import Stat from './Stat';
+import Stats from './Stats';
 
 interface Pokemon {
   name: string,
   nationalDexNumber: number,
   types: PokemonType[],
-  stats?: Stat[]
+  stats?: Stats
   alternateForms?: string[],
   scarletExclusive?: boolean,
   violetExclusive?: boolean

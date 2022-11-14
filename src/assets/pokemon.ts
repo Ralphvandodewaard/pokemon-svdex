@@ -1,133 +1,123 @@
 import Pokemon from '@/models/Pokemon';
 import types from './types';
-import stats from './stats';
 
 const pokemon: Pokemon[] = [
   {
     name: 'Sprigatito',
     nationalDexNumber: 906,
     types: [types.grass],
-    stats: [
-      { ...stats.hp, value: 40 },
-      { ...stats.attack, value: 61 },
-      { ...stats.defense, value: 54 },
-      { ...stats.specialAttack, value: 45 },
-      { ...stats.specialDefense, value: 45 },
-      { ...stats.speed, value: 65 },
-      { ...stats.total, value: 310 }
-    ]
+    stats: {
+      hp: 40,
+      attack: 61,
+      defense: 54,
+      specialAttack: 45,
+      specialDefense: 45,
+      speed: 65
+    }
   },
   {
     name: 'Floragato',
     nationalDexNumber: 907,
     types: [types.grass],
-    stats: [
-      { ...stats.hp, value: 61 },
-      { ...stats.attack, value: 80 },
-      { ...stats.defense, value: 63 },
-      { ...stats.specialAttack, value: 60 },
-      { ...stats.specialDefense, value: 63 },
-      { ...stats.speed, value: 83 },
-      { ...stats.total, value: 410 }
-    ]
+    stats: {
+      hp: 61,
+      attack: 80,
+      defense: 63,
+      specialAttack: 60,
+      specialDefense: 63,
+      speed: 83
+    }
   },
   {
     name: 'Meowscarada',
     nationalDexNumber: 908,
     types: [types.grass, types.dark],
-    stats: [
-      { ...stats.hp, value: 76 },
-      { ...stats.attack, value: 110 },
-      { ...stats.defense, value: 70 },
-      { ...stats.specialAttack, value: 81 },
-      { ...stats.specialDefense, value: 70 },
-      { ...stats.speed, value: 123 },
-      { ...stats.total, value: 530 }
-    ]
+    stats: {
+      hp: 76,
+      attack: 110,
+      defense: 70,
+      specialAttack: 81,
+      specialDefense: 70,
+      speed: 123
+    }
   },
   {
     name: 'Fuecoco',
     nationalDexNumber: 909,
     types: [types.fire],
-    stats: [
-      { ...stats.hp, value: 67 },
-      { ...stats.attack, value: 45 },
-      { ...stats.defense, value: 59 },
-      { ...stats.specialAttack, value: 63 },
-      { ...stats.specialDefense, value: 43 },
-      { ...stats.speed, value: 36 },
-      { ...stats.total, value: 313 }
-    ]
+    stats: {
+      hp: 67,
+      attack: 45,
+      defense: 59,
+      specialAttack: 63,
+      specialDefense: 43,
+      speed: 36
+    }
   },
   {
     name: 'Crocalor',
     nationalDexNumber: 910,
     types: [types.fire],
-    stats: [
-      { ...stats.hp, value: 81 },
-      { ...stats.attack, value: 55 },
-      { ...stats.defense, value: 78 },
-      { ...stats.specialAttack, value: 90 },
-      { ...stats.specialDefense, value: 58 },
-      { ...stats.speed, value: 49 },
-      { ...stats.total, value: 411 }
-    ]
+    stats: {
+      hp: 81,
+      attack: 55,
+      defense: 78,
+      specialAttack: 90,
+      specialDefense: 58,
+      speed: 49
+    }
   },
   {
     name: 'Skeledirge',
     nationalDexNumber: 911,
     types: [types.fire, types.ghost],
-    stats: [
-      { ...stats.hp, value: 104 },
-      { ...stats.attack, value: 75 },
-      { ...stats.defense, value: 100 },
-      { ...stats.specialAttack, value: 110 },
-      { ...stats.specialDefense, value: 76 },
-      { ...stats.speed, value: 66 },
-      { ...stats.total, value: 531 }
-    ]
+    stats: {
+      hp: 104,
+      attack: 75,
+      defense: 100,
+      specialAttack: 110,
+      specialDefense: 76,
+      speed: 66
+    }
   },
   {
     name: 'Quaxly',
     nationalDexNumber: 912,
     types: [types.water],
-    stats: [
-      { ...stats.hp, value: 55 },
-      { ...stats.attack, value: 65 },
-      { ...stats.defense, value: 45 },
-      { ...stats.specialAttack, value: 50 },
-      { ...stats.specialDefense, value: 45 },
-      { ...stats.speed, value: 50 },
-      { ...stats.total, value: 310 }
-    ]
+    stats: {
+      hp: 55,
+      attack: 65,
+      defense: 45,
+      specialAttack: 50,
+      specialDefense: 45,
+      speed: 50
+    }
   },
   {
     name: 'Quaxwell',
     nationalDexNumber: 913,
     types: [types.water],
-    stats: [
-      { ...stats.hp, value: 70 },
-      { ...stats.attack, value: 85 },
-      { ...stats.defense, value: 65 },
-      { ...stats.specialAttack, value: 65 },
-      { ...stats.specialDefense, value: 60 },
-      { ...stats.speed, value: 65 },
-      { ...stats.total, value: 410 }
-    ]
+    stats: {
+      hp: 70,
+      attack: 85,
+      defense: 65,
+      specialAttack: 65,
+      specialDefense: 60,
+      speed: 65
+    }
   },
   {
     name: 'Quaquaval',
     nationalDexNumber: 914,
     types: [types.water, types.fighting],
-    stats: [
-      { ...stats.hp, value: 85 },
-      { ...stats.attack, value: 120 },
-      { ...stats.defense, value: 80 },
-      { ...stats.specialAttack, value: 85 },
-      { ...stats.specialDefense, value: 75 },
-      { ...stats.speed, value: 85 },
-      { ...stats.total, value: 530 }
-    ]
+    stats: {
+      hp: 85,
+      attack: 120,
+      defense: 80,
+      specialAttack: 85,
+      specialDefense: 75,
+      speed: 85
+    }
   },
   {
     name: 'Lechonk',
