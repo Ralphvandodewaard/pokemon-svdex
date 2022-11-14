@@ -22,7 +22,7 @@ export default defineComponent({
   },
   setup(props) {
     const getBackgroundClass = computed<string>(() => {
-      return `bg-${props.pokemonType.toLowerCase()}`;
+      return `bg-types-${props.pokemonType.toLowerCase()}`;
     });
 
     return {

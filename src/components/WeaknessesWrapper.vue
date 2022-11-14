@@ -44,24 +44,11 @@ export default defineComponent({
     });
 
     function getTypeBackgroundClass(typeLabel: string): string {
-      return `bg-${typeLabel.toLowerCase()}`;
+      return `bg-types-${typeLabel.toLowerCase()}`;
     }
 
     function getWeaknessBackgroundClass(typeLabel: string): string {
-      switch (getDamageMultiplier(typeLabel)) {
-        case 4:
-          return 'bg-fourTimes';
-        case 2:
-          return 'bg-twoTimes';
-        case 0.5:
-          return 'bg-halfTimes';
-        case 0.25:
-          return 'bg-quarterTimes';
-        case 0:
-          return 'bg-immune';
-        default:
-          return '';
-      }
+      return `bg-multipliers-${getDamageMultiplier(typeLabel)}`;
     }
 
     function getDamageMultiplier(typeLabel: string): number {

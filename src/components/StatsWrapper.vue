@@ -63,9 +63,9 @@ export default defineComponent({
     function getBarColorClass(stat: Stat): string {
       if (stat.value) {
         if (stat.value >= 150) {
-          return 'bg-stats-ultraHigh';
+          return 'bg-stats-ultra-high';
         } else if (stat.value >= 120) {
-          return 'bg-stats-veryHigh';
+          return 'bg-stats-very-high';
         } else if (stat.value >= 90) {
           return 'bg-stats-high';
         } else if (stat.value >= 60) {

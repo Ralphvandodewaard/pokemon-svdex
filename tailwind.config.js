@@ -2,7 +2,9 @@
 module.exports = {
   content: ['./public/**/*.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
   safelist: [
-    { pattern: /bg-(normal|fighting|flying|poison|ground|rock|bug|ghost|steel|fire|water|grass|electric|psychic|ice|dragon|dark|fairy|fourTimes|twoTimes|halfTimes|quarterTimes|immune)/ }
+    { pattern: /bg-types-(normal|fighting|flying|poison|ground|rock|bug|ghost|steel|fire|water|grass|electric|psychic|ice|dragon|dark|fairy)/ },
+    { pattern: /bg-multipliers-(0|0.25|0.5|2|4)/ },
+    { pattern: /bg-stats(low|average|high|very-high|ultra-high)/ }
   ],
   theme: {
     extend: {
@@ -13,36 +15,42 @@ module.exports = {
         tiny: ['10px', '12px']
       },
       colors: {
-        background: '#2b2b2b',
-        normal: '#a8a878',
-        fighting: '#c03028',
-        flying: '#a890f0',
-        poison: '#a040a0',
-        ground: '#e0c068',
-        rock: '#b8a038',
-        bug: '#a8b820',
-        ghost: '#705898',
-        steel: '#b8b8d0',
-        fire: '#f08030',
-        water: '#6890f0',
-        grass: '#78c850',
-        electric: '#f8d030',
-        psychic: '#f85888',
-        ice: '#98d8d8',
-        dragon: '#7038f8',
-        dark: '#705848',
-        fairy: '#ee99ac',
-        fourTimes: '#73d216',
-        twoTimes: '#4e9a06',
-        halfTimes: '#a40000',
-        quarterTimes: '#7c0000',
-        immune: '#2e3436',
+        neutral: {
+          850: '#2B2B2B'
+        },
+        types: {
+          normal: '#A8a878',
+          fire: '#F08030',
+          water: '#6890F0',
+          electric: '#F8D030',
+          grass: '#78C850',
+          ice: '#98D8D8',
+          fighting: '#C03028',
+          poison: '#A040A0',
+          ground: '#E0C068',
+          flying: '#A890F0',
+          psychic: '#F85888',
+          bug: '#A8B820',
+          rock: '#B8A038',
+          ghost: '#705898',
+          dragon: '#7038F8',
+          dark: '#705848',
+          steel: '#B8B8D0',
+          fairy: '#EE99AC'
+        },
+        multipliers: {
+          0: '#2E3436',
+          0.25: '#7C0000',
+          0.5: '#A40000',
+          2: '#4E9A06',
+          4: '#73D216'
+        },
         stats: {
           low: '#FF7F0F',
           average: '#FFDD57',
           high: '#A0E515',
-          veryHigh: '#23CD5E',
-          ultraHigh: '#00C2B8'
+          'very-high': '#23CD5E',
+          'ultra-high': '#00C2B8'
         }
       }
     }
