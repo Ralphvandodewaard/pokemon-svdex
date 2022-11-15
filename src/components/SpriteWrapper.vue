@@ -11,22 +11,23 @@
       v-if="alternateForms && alternateForms.length > 0"
       class="flex gap-2 text-xs text-blue-400"
     >
-      <button @click="selectedAlternateForm = ''">
+      <button @click="$emit('update:modelValue', null)">
         1
       </button>
       <button
-        v-for="(alternateForm, index) in alternateForms"
-        :key="alternateForm"
-        @click="selectedAlternateForm = alternateForm"
+        v-for="alternateForm in alternateForms"
+        :key="alternateForm.id"
+        @click="$emit('update:modelValue', alternateForm)"
       >
-        {{ index + 2 }}
+        {{ getIndex(alternateForm.id) }}
       </button>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, ref, computed } from 'vue';
+import { defineComponent, PropType, computed } from 'vue';
+import AlternateForm from '@/models/AlternateForm';
 
 export default defineComponent({
   name: 'SpriteWrapper',
@@ -40,19 +41,28 @@ export default defineComponent({
       required: true
     },
     alternateForms: {
-      type: Array as PropType<string[]>
+      type: Array as PropType<AlternateForm[]>
+    },
+    modelValue: {
+      type: Object as PropType<AlternateForm | null>
     }
   },
   setup(props) {
-    const selectedAlternateForm = ref('');
-
     const getImage = computed<string>(() => {
-      return require(`@/assets/sprites/${selectedAlternateForm.value || props.nationalDexNumber}.png`);
+      return require(`@/assets/sprites/${props.modelValue?.id || props.nationalDexNumber}.png`);
     });
+
+    function getIndex(id: string): number {
+      if (props.alternateForms) {
+        return props.alternateForms.findIndex((alternateForm: AlternateForm) => alternateForm.id === id) + 2;
+      }
+
+      return 0;
+    }
 
     return {
       getImage,
-      selectedAlternateForm
+      getIndex
     };
   }
 });

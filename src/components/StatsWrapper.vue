@@ -33,6 +33,7 @@
 <script lang="ts">
 import { defineComponent, PropType, computed } from 'vue';
 import Stats from '@/models/Stats';
+import AlternateForm from '@/models/AlternateForm';
 
 export default defineComponent({
   name: 'StatsWrapper',
@@ -40,20 +41,29 @@ export default defineComponent({
     stats: {
       type: Object as PropType<Stats>,
       required: true
+    },
+    selectedAlternateForm: {
+      type: Object as PropType<AlternateForm | null>
     }
   },
   setup(props) {
     const allStats = computed<number[]>(() => {
-      return Object.values(props.stats);
+      return props.selectedAlternateForm && props.selectedAlternateForm.stats
+        ? Object.values(props.selectedAlternateForm.stats)
+        : Object.values(props.stats);
     });
 
     const totalStat = computed<number>(() => {
-      return props.stats.hp +
-        props.stats.attack +
-        props.stats.defense +
-        props.stats.specialAttack +
-        props.stats.specialDefense +
-        props.stats.speed;
+      const stats = props.selectedAlternateForm && props.selectedAlternateForm.stats
+        ? props.selectedAlternateForm.stats
+        : props.stats;
+
+      return stats.hp +
+        stats.attack +
+        stats.defense +
+        stats.specialAttack +
+        stats.specialDefense +
+        stats.speed;
     });
 
     function getStatLabel(index: number): string {

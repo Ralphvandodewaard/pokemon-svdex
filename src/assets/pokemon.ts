@@ -133,10 +133,9 @@ const pokemon: Pokemon[] = [
     }
   },
   {
-    name: 'Oinkologne',
+    name: 'Oinkologne-M',
     nationalDexNumber: 916,
     types: [types.normal],
-    alternateForms: ['916-2'],
     stats: {
       hp: 110,
       attack: 100,
@@ -144,7 +143,21 @@ const pokemon: Pokemon[] = [
       specialAttack: 59,
       specialDefense: 80,
       speed: 65
-    }
+    },
+    alternateForms: [
+      {
+        id: '916-2',
+        name: 'Oinkologne-F',
+        stats: {
+          hp: 115,
+          attack: 90,
+          defense: 70,
+          specialAttack: 59,
+          specialDefense: 90,
+          speed: 65
+        }
+      }
+    ]
   },
   {
     name: 'Dundunsparce',
@@ -371,7 +384,6 @@ const pokemon: Pokemon[] = [
     name: 'Palafin',
     nationalDexNumber: 934,
     types: [types.water],
-    alternateForms: ['934-2'],
     stats: {
       hp: 100,
       attack: 70,
@@ -379,7 +391,21 @@ const pokemon: Pokemon[] = [
       specialAttack: 53,
       specialDefense: 62,
       speed: 100
-    }
+    },
+    alternateForms: [
+      {
+        id: '934-2',
+        name: 'Palafin-Hero',
+        stats: {
+          hp: 100,
+          attack: 160,
+          defense: 97,
+          specialAttack: 106,
+          specialDefense: 87,
+          speed: 100
+        }
+      }
+    ]
   },
   {
     name: 'Smoliv',
@@ -528,7 +554,6 @@ const pokemon: Pokemon[] = [
     name: 'Maushold',
     nationalDexNumber: 946,
     types: [types.normal],
-    alternateForms: ['946-2'],
     stats: {
       hp: 74,
       attack: 75,
@@ -536,7 +561,13 @@ const pokemon: Pokemon[] = [
       specialAttack: 65,
       specialDefense: 75,
       speed: 111
-    }
+    },
+    alternateForms: [
+      {
+        id: '946-2',
+        name: 'Maushold-2'
+      }
+    ]
   },
   {
     name: 'Cetoddle',
@@ -607,7 +638,6 @@ const pokemon: Pokemon[] = [
     name: 'Tatsugiri',
     nationalDexNumber: 952,
     types: [types.dragon, types.water],
-    alternateForms: ['952-2', '952-3'],
     stats: {
       hp: 68,
       attack: 50,
@@ -615,7 +645,17 @@ const pokemon: Pokemon[] = [
       specialAttack: 120,
       specialDefense: 95,
       speed: 82
-    }
+    },
+    alternateForms: [
+      {
+        id: '952-2',
+        name: 'Tatsugiri-2'
+      },
+      {
+        id: '952-3',
+        name: 'Tatsugiri-3'
+      }
+    ]
   },
   {
     name: 'Cyclizar',
@@ -712,7 +752,6 @@ const pokemon: Pokemon[] = [
     name: 'Squawkability',
     nationalDexNumber: 960,
     types: [types.normal, types.flying],
-    alternateForms: ['960-2', '960-3', '960-4'],
     stats: {
       hp: 82,
       attack: 96,
@@ -720,7 +759,21 @@ const pokemon: Pokemon[] = [
       specialAttack: 45,
       specialDefense: 51,
       speed: 92
-    }
+    },
+    alternateForms: [
+      {
+        id: '960-2',
+        name: 'Squawkability-2'
+      },
+      {
+        id: '960-3',
+        name: 'Squawkability-3'
+      },
+      {
+        id: '960-4',
+        name: 'Squawkability-4'
+      }
+    ]
   },
   {
     name: 'Flamigo',
@@ -918,10 +971,9 @@ const pokemon: Pokemon[] = [
     }
   },
   {
-    name: 'Gimmighoul',
+    name: 'Gimmighoul-Roaming',
     nationalDexNumber: 976,
     types: [types.ghost],
-    alternateForms: ['976-2'],
     stats: {
       hp: 45,
       attack: 30,
@@ -929,7 +981,21 @@ const pokemon: Pokemon[] = [
       specialAttack: 75,
       specialDefense: 45,
       speed: 80
-    }
+    },
+    alternateForms: [
+      {
+        id: '976-2',
+        name: 'Gimmighoul-Chest',
+        stats: {
+          hp: 45,
+          attack: 30,
+          defense: 70,
+          specialAttack: 75,
+          specialDefense: 70,
+          speed: 10
+        }
+      }
+    ]
   },
   {
     name: 'Gholdengo',
@@ -1197,7 +1263,6 @@ const pokemon: Pokemon[] = [
     nationalDexNumber: 998,
     types: [types.fighting, types.dragon],
     scarletExclusive: true,
-    alternateForms: ['998-2'],
     stats: {
       hp: 100,
       attack: 135,
@@ -1205,14 +1270,19 @@ const pokemon: Pokemon[] = [
       specialAttack: 85,
       specialDefense: 100,
       speed: 135
-    }
+    },
+    alternateForms: [
+      {
+        id: '998-2',
+        name: 'Koraidon-Mount'
+      }
+    ]
   },
   {
     name: 'Miraidon',
     nationalDexNumber: 999,
     types: [types.electric, types.dragon],
     violetExclusive: true,
-    alternateForms: ['999-2'],
     stats: {
       hp: 100,
       attack: 85,
@@ -1220,7 +1290,13 @@ const pokemon: Pokemon[] = [
       specialAttack: 135,
       specialDefense: 115,
       speed: 135
-    }
+    },
+    alternateForms: [
+      {
+        id: '999-2',
+        name: 'Miraidon-Mount'
+      }
+    ]
   },
   {
     name: 'Tinkatink',

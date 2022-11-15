@@ -4,7 +4,7 @@
       <span class="text-xs font-normal">
         #{{ nationalDexNumber }}
       </span>
-      {{ name }}
+      {{ selectedAlternateForm?.name || name }}
     </p>
     <img
       v-if="scarletExclusive"
@@ -22,7 +22,8 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from 'vue';
+import { defineComponent, PropType } from 'vue';
+import AlternateForm from '@/models/AlternateForm';
 
 export default defineComponent({
   name: 'NameWrapper',
@@ -34,6 +35,9 @@ export default defineComponent({
     nationalDexNumber: {
       type: Number,
       required: true
+    },
+    selectedAlternateForm: {
+      type: Object as PropType<AlternateForm | null>
     },
     scarletExclusive: {
       type: Boolean
