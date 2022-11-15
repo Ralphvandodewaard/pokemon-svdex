@@ -7,7 +7,7 @@
     >
       <PokemonWrapper
         v-for="pokemon in filteredPokemon"
-        :key="pokemon.name"
+        :key="pokemon.nationalDexNumber"
         :pokemon="pokemon"
       />
     </div>
