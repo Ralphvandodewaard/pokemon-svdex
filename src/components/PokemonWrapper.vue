@@ -13,13 +13,9 @@
           :scarlet-exclusive="pokemon.scarletExclusive"
           :violet-exclusive="pokemon.violetExclusive"
         />
-        <div class="flex gap-0.5">
-          <TypeWrapper
-            v-for="pokemonType in pokemon.types"
-            :key="pokemonType.label"
-            :pokemon-type="pokemonType.label"
-          />
-        </div>
+        <TypesWrapper
+          :pokemon-types="pokemon.types"
+        />
       </div>
       <template v-if="pokemon.stats">
         <StatsWrapper :stats="pokemon.stats" />
@@ -34,7 +30,7 @@ import { defineComponent, PropType } from 'vue';
 import Pokemon from '@/models/Pokemon';
 import SpriteWrapper from './SpriteWrapper.vue';
 import NameWrapper from './NameWrapper.vue';
-import TypeWrapper from './TypeWrapper.vue';
+import TypesWrapper from './TypesWrapper.vue';
 import StatsWrapper from './StatsWrapper.vue';
 import WeaknessesWrapper from './WeaknessesWrapper.vue';
 
@@ -43,7 +39,7 @@ export default defineComponent({
   components: {
     SpriteWrapper,
     NameWrapper,
-    TypeWrapper,
+    TypesWrapper,
     StatsWrapper,
     WeaknessesWrapper
   },
