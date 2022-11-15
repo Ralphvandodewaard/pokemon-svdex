@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-start gap-2">
+  <div class="flex items-start gap-4">
     <div class="flex flex-col">
       <div class="flex justify-center items-center flex-shrink-0 w-20 h-20 bg-neutral-800 border border-black rounded-lg overflow-hidden">
         <img
