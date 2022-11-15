@@ -7,26 +7,12 @@
     />
     <div class="flex flex-col gap-4">
       <div class="flex flex-col gap-1">
-        <div class="flex items-center gap-2">
-          <p class="text-lg leading-5 font-semibold">
-            <span class="text-xs font-normal">
-              #{{ pokemon.nationalDexNumber }}
-            </span>
-            {{ pokemon.name }}
-          </p>
-          <img
-            v-if="pokemon.scarletExclusive"
-            src="@/assets/scarlet-logo-small.png"
-            alt="Pokemon Scarlet logo small"
-            class="h-3"
-          />
-          <img
-            v-if="pokemon.violetExclusive"
-            src="@/assets/violet-logo-small.png"
-            alt="Pokemon Scarlet logo small"
-            class="h-3"
-          />
-        </div>
+        <NameWrapper
+          :name="pokemon.name"
+          :national-dex-number="pokemon.nationalDexNumber"
+          :scarlet-exclusive="pokemon.scarletExclusive"
+          :violet-exclusive="pokemon.violetExclusive"
+        />
         <div class="flex gap-0.5">
           <TypeWrapper
             v-for="pokemonType in pokemon.types"
@@ -47,6 +33,7 @@
 import { defineComponent, PropType } from 'vue';
 import Pokemon from '@/models/Pokemon';
 import SpriteWrapper from './SpriteWrapper.vue';
+import NameWrapper from './NameWrapper.vue';
 import TypeWrapper from './TypeWrapper.vue';
 import StatsWrapper from './StatsWrapper.vue';
 import WeaknessesWrapper from './WeaknessesWrapper.vue';
@@ -55,6 +42,7 @@ export default defineComponent({
   name: 'PokemonWrapper',
   components: {
     SpriteWrapper,
+    NameWrapper,
     TypeWrapper,
     StatsWrapper,
     WeaknessesWrapper
