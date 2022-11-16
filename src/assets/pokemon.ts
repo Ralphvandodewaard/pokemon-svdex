@@ -325,7 +325,7 @@ const pokemon: Pokemon[] = [
     }
   },
   {
-    name: 'Firagiraf',
+    name: 'Farigiraf',
     regionalDexNumber: 193,
     nationalDexNumber: 928,
     types: [types.normal, types.psychic],
