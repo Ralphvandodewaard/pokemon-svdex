@@ -1041,29 +1041,29 @@ const pokemon: Pokemon[] = [
     }
   },
   {
-    name: 'Gimmighoul-Roaming',
+    name: 'Gimmighoul-Chest',
     regionalDexNumber: 391,
     nationalDexNumber: 976,
     types: [types.ghost],
     stats: {
       hp: 45,
       attack: 30,
-      defense: 25,
+      defense: 70,
       specialAttack: 75,
-      specialDefense: 45,
-      speed: 80
+      specialDefense: 70,
+      speed: 10
     },
     alternateForms: [
       {
         id: '976-2',
-        name: 'Gimmighoul-Chest',
+        name: 'Gimmighoul-Roaming',
         stats: {
           hp: 45,
           attack: 30,
-          defense: 70,
+          defense: 25,
           specialAttack: 75,
-          specialDefense: 70,
-          speed: 10
+          specialDefense: 45,
+          speed: 80
         }
       }
     ]
