@@ -2,7 +2,7 @@
   <div class="flex items-center gap-2">
     <p class="text-lg leading-5 font-semibold">
       <span class="text-xs font-normal">
-        #{{ regionalDexNumber }}
+        #{{ getFormattedRegionalDexNumber }}
       </span>
       {{ selectedAlternateForm?.name || name }}
     </p>
@@ -22,7 +22,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from 'vue';
+import { defineComponent, PropType, computed } from 'vue';
 import AlternateForm from '@/models/AlternateForm';
 
 export default defineComponent({
@@ -45,6 +45,21 @@ export default defineComponent({
     violetExclusive: {
       type: Boolean
     }
+  },
+  setup(props) {
+    const getFormattedRegionalDexNumber = computed<string | number>(() => {
+      if (props.regionalDexNumber < 10) {
+        return `00${props.regionalDexNumber}`;
+      } else if (props.regionalDexNumber < 100) {
+        return `0${props.regionalDexNumber}`;
+      }
+
+      return props.regionalDexNumber;
+    });
+
+    return {
+      getFormattedRegionalDexNumber
+    };
   }
 });
 </script>
