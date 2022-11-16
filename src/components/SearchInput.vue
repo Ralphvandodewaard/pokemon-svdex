@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full sm:max-w-xs text-black font-sans">
+  <div class="relative w-full text-black font-sans">
     <label
       for="search"
       class="absolute top-0 left-0 flex items-center h-full pl-3"

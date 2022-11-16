@@ -1,6 +1,11 @@
 <template>
   <div class="flex flex-col items-center gap-8 w-full">
-    <SearchInput v-model="searchValue" />
+    <div class="flex flex-col items-center gap-2 w-full sm:max-w-xs">
+      <SearchInput v-model="searchValue" />
+      <p class="text-xs">
+        Displaying {{ filteredPokemon.length }} results
+      </p>
+    </div>
     <div
       v-if="filteredPokemon.length > 0"
       class="flex flex-col gap-8"
