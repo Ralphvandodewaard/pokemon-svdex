@@ -21,3 +21,7 @@
   font-weight: 700;
   src: url("../assets/fonts/Sora-Bold.ttf") format("truetype");
 }
+
+body {
+  @apply overflow-y-scroll;
+}
