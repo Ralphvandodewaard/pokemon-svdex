@@ -10,7 +10,7 @@
       <div class="flex flex-col gap-1">
         <NameWrapper
           :name="pokemon.name"
-          :national-dex-number="pokemon.nationalDexNumber"
+          :regional-dex-number="pokemon.regionalDexNumber"
           :selected-alternate-form="selectedAlternateForm"
           :scarlet-exclusive="pokemon.scarletExclusive"
           :violet-exclusive="pokemon.violetExclusive"

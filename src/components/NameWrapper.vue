@@ -2,7 +2,7 @@
   <div class="flex items-center gap-2">
     <p class="text-lg leading-5 font-semibold">
       <span class="text-xs font-normal">
-        #{{ nationalDexNumber }}
+        #{{ regionalDexNumber }}
       </span>
       {{ selectedAlternateForm?.name || name }}
     </p>
@@ -32,7 +32,7 @@ export default defineComponent({
       type: String,
       required: true
     },
-    nationalDexNumber: {
+    regionalDexNumber: {
       type: Number,
       required: true
     },
