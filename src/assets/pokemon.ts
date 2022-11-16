@@ -1361,13 +1361,7 @@ const pokemon: Pokemon[] = [
       specialAttack: 85,
       specialDefense: 100,
       speed: 135
-    },
-    alternateForms: [
-      {
-        id: '998-2',
-        name: 'Koraidon-Mount'
-      }
-    ]
+    }
   },
   {
     name: 'Miraidon',
@@ -1382,13 +1376,7 @@ const pokemon: Pokemon[] = [
       specialAttack: 135,
       specialDefense: 115,
       speed: 135
-    },
-    alternateForms: [
-      {
-        id: '999-2',
-        name: 'Miraidon-Mount'
-      }
-    ]
+    }
   },
   {
     name: 'Tinkatink',
