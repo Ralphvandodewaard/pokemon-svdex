@@ -6,7 +6,7 @@
       class="flex flex-col gap-8"
     >
       <PokemonWrapper
-        v-for="pokemon in filteredPokemon"
+        v-for="pokemon in sortedPokemon"
         :key="pokemon.nationalDexNumber"
         :pokemon="pokemon"
       />
@@ -44,9 +44,15 @@ export default defineComponent({
       });
     });
 
+    const sortedPokemon = computed<Pokemon[]>(() => {
+      const filteredList: Pokemon[] = filteredPokemon.value;
+      return filteredList.sort((a: Pokemon, b: Pokemon) => a.regionalDexNumber - b.regionalDexNumber);
+    });
+
     return {
       searchValue,
-      filteredPokemon
+      filteredPokemon,
+      sortedPokemon
     };
   }
 });
