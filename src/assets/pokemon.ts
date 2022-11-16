@@ -4,6 +4,7 @@ import types from './types';
 const pokemon: Pokemon[] = [
   {
     name: 'Sprigatito',
+    regionalDexNumber: 1,
     nationalDexNumber: 906,
     types: [types.grass],
     stats: {
@@ -17,6 +18,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Floragato',
+    regionalDexNumber: 2,
     nationalDexNumber: 907,
     types: [types.grass],
     stats: {
@@ -30,6 +32,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Meowscarada',
+    regionalDexNumber: 3,
     nationalDexNumber: 908,
     types: [types.grass, types.dark],
     stats: {
@@ -43,6 +46,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Fuecoco',
+    regionalDexNumber: 4,
     nationalDexNumber: 909,
     types: [types.fire],
     stats: {
@@ -56,6 +60,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Crocalor',
+    regionalDexNumber: 5,
     nationalDexNumber: 910,
     types: [types.fire],
     stats: {
@@ -69,6 +74,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Skeledirge',
+    regionalDexNumber: 6,
     nationalDexNumber: 911,
     types: [types.fire, types.ghost],
     stats: {
@@ -82,6 +88,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Quaxly',
+    regionalDexNumber: 7,
     nationalDexNumber: 912,
     types: [types.water],
     stats: {
@@ -95,6 +102,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Quaxwell',
+    regionalDexNumber: 8,
     nationalDexNumber: 913,
     types: [types.water],
     stats: {
@@ -108,6 +116,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Quaquaval',
+    regionalDexNumber: 9,
     nationalDexNumber: 914,
     types: [types.water, types.fighting],
     stats: {
@@ -121,6 +130,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Lechonk',
+    regionalDexNumber: 10,
     nationalDexNumber: 915,
     types: [types.normal],
     stats: {
@@ -134,6 +144,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Oinkologne-M',
+    regionalDexNumber: 11,
     nationalDexNumber: 916,
     types: [types.normal],
     stats: {
@@ -161,6 +172,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Dundunsparce',
+    regionalDexNumber: 189,
     nationalDexNumber: 917,
     types: [types.normal],
     stats: {
@@ -174,6 +186,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Tarountula',
+    regionalDexNumber: 12,
     nationalDexNumber: 918,
     types: [types.bug],
     stats: {
@@ -187,6 +200,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Spidops',
+    regionalDexNumber: 13,
     nationalDexNumber: 919,
     types: [types.bug],
     stats: {
@@ -200,6 +214,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Nymble',
+    regionalDexNumber: 14,
     nationalDexNumber: 920,
     types: [types.bug],
     stats: {
@@ -213,6 +228,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Lokix',
+    regionalDexNumber: 15,
     nationalDexNumber: 921,
     types: [types.bug, types.dark],
     stats: {
@@ -226,6 +242,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Rellor',
+    regionalDexNumber: 254,
     nationalDexNumber: 922,
     types: [types.bug],
     stats: {
@@ -239,6 +256,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Rabsca',
+    regionalDexNumber: 255,
     nationalDexNumber: 923,
     types: [types.bug, types.psychic],
     stats: {
@@ -252,6 +270,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Greavard',
+    regionalDexNumber: 311,
     nationalDexNumber: 924,
     types: [types.ghost],
     stats: {
@@ -265,6 +284,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Houndstone',
+    regionalDexNumber: 312,
     nationalDexNumber: 925,
     types: [types.ghost],
     stats: {
@@ -278,6 +298,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Flittle',
+    regionalDexNumber: 263,
     nationalDexNumber: 926,
     types: [types.psychic],
     stats: {
@@ -291,6 +312,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Espartha',
+    regionalDexNumber: 264,
     nationalDexNumber: 927,
     types: [types.psychic],
     stats: {
@@ -304,6 +326,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Firagiraf',
+    regionalDexNumber: 193,
     nationalDexNumber: 928,
     types: [types.normal, types.psychic],
     stats: {
@@ -317,6 +340,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Wiglett',
+    regionalDexNumber: 288,
     nationalDexNumber: 929,
     types: [types.water],
     stats: {
@@ -330,6 +354,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Wugtrio',
+    regionalDexNumber: 289,
     nationalDexNumber: 930,
     types: [types.water],
     stats: {
@@ -343,6 +368,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Dondozo',
+    regionalDexNumber: 374,
     nationalDexNumber: 931,
     types: [types.water],
     stats: {
@@ -356,6 +382,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Veluza',
+    regionalDexNumber: 373,
     nationalDexNumber: 932,
     types: [types.water, types.psychic],
     stats: {
@@ -369,6 +396,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Finizen',
+    regionalDexNumber: 291,
     nationalDexNumber: 933,
     types: [types.water],
     stats: {
@@ -382,6 +410,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Palafin',
+    regionalDexNumber: 292,
     nationalDexNumber: 934,
     types: [types.water],
     stats: {
@@ -409,6 +438,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Smoliv',
+    regionalDexNumber: 84,
     nationalDexNumber: 935,
     types: [types.grass, types.normal],
     stats: {
@@ -422,6 +452,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Dolliv',
+    regionalDexNumber: 85,
     nationalDexNumber: 936,
     types: [types.grass, types.normal],
     stats: {
@@ -435,6 +466,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Arboliva',
+    regionalDexNumber: 86,
     nationalDexNumber: 937,
     types: [types.grass, types.normal],
     stats: {
@@ -448,6 +480,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Capsakid',
+    regionalDexNumber: 250,
     nationalDexNumber: 938,
     types: [types.grass],
     stats: {
@@ -461,6 +494,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Scovillain',
+    regionalDexNumber: 251,
     nationalDexNumber: 939,
     types: [types.grass, types.fire],
     stats: {
@@ -474,6 +508,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Tadbulb',
+    regionalDexNumber: 170,
     nationalDexNumber: 940,
     types: [types.electric],
     stats: {
@@ -487,6 +522,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Bellibolt',
+    regionalDexNumber: 171,
     nationalDexNumber: 941,
     types: [types.electric],
     stats: {
@@ -500,6 +536,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Varoom',
+    regionalDexNumber: 293,
     nationalDexNumber: 942,
     types: [types.steel, types.poison],
     stats: {
@@ -513,6 +550,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Revavroom',
+    regionalDexNumber: 294,
     nationalDexNumber: 943,
     types: [types.steel, types.poison],
     stats: {
@@ -526,6 +564,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Orthworm',
+    regionalDexNumber: 296,
     nationalDexNumber: 944,
     types: [types.steel],
     stats: {
@@ -539,6 +578,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Tandemous',
+    regionalDexNumber: 71,
     nationalDexNumber: 945,
     types: [types.normal],
     stats: {
@@ -552,6 +592,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Maushold',
+    regionalDexNumber: 72,
     nationalDexNumber: 946,
     types: [types.normal],
     stats: {
@@ -571,6 +612,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Cetoddle',
+    regionalDexNumber: 361,
     nationalDexNumber: 947,
     types: [types.ice],
     stats: {
@@ -584,6 +626,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Cetitan',
+    regionalDexNumber: 362,
     nationalDexNumber: 948,
     types: [types.ice],
     stats: {
@@ -597,6 +640,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Frigibax',
+    regionalDexNumber: 388,
     nationalDexNumber: 949,
     types: [types.dragon, types.ice],
     stats: {
@@ -610,6 +654,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Arctibax',
+    regionalDexNumber: 389,
     nationalDexNumber: 950,
     types: [types.dragon, types.ice],
     stats: {
@@ -623,6 +668,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Baxcalibur',
+    regionalDexNumber: 390,
     nationalDexNumber: 951,
     types: [types.dragon, types.ice],
     stats: {
@@ -636,6 +682,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Tatsugiri',
+    regionalDexNumber: 375,
     nationalDexNumber: 952,
     types: [types.dragon, types.water],
     stats: {
@@ -659,6 +706,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Cyclizar',
+    regionalDexNumber: 295,
     nationalDexNumber: 953,
     types: [types.dragon, types.normal],
     stats: {
@@ -672,6 +720,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Pawmi',
+    regionalDexNumber: 22,
     nationalDexNumber: 954,
     types: [types.electric],
     stats: {
@@ -685,6 +734,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Pawmo',
+    regionalDexNumber: 23,
     nationalDexNumber: 955,
     types: [types.electric, types.fighting],
     stats: {
@@ -698,6 +748,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Pawmot',
+    regionalDexNumber: 24,
     nationalDexNumber: 956,
     types: [types.electric, types.fighting],
     stats: {
@@ -711,6 +762,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Wattrel',
+    regionalDexNumber: 177,
     nationalDexNumber: 957,
     types: [types.electric, types.flying],
     stats: {
@@ -724,6 +776,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Kilowattrel',
+    regionalDexNumber: 178,
     nationalDexNumber: 958,
     types: [types.electric, types.flying],
     stats: {
@@ -737,6 +790,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Bombirdier',
+    regionalDexNumber: 290,
     nationalDexNumber: 959,
     types: [types.flying, types.dark],
     stats: {
@@ -750,6 +804,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Squawkability',
+    regionalDexNumber: 113,
     nationalDexNumber: 960,
     types: [types.normal, types.flying],
     stats: {
@@ -777,6 +832,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Flamigo',
+    regionalDexNumber: 346,
     nationalDexNumber: 961,
     types: [types.flying, types.fighting],
     stats: {
@@ -790,6 +846,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Klawf',
+    regionalDexNumber: 249,
     nationalDexNumber: 962,
     types: [types.rock],
     stats: {
@@ -803,6 +860,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Nacli',
+    regionalDexNumber: 129,
     nationalDexNumber: 963,
     types: [types.rock],
     stats: {
@@ -816,6 +874,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Naclstack',
+    regionalDexNumber: 130,
     nationalDexNumber: 964,
     types: [types.rock],
     stats: {
@@ -829,6 +888,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Garganacl',
+    regionalDexNumber: 131,
     nationalDexNumber: 965,
     types: [types.rock],
     stats: {
@@ -842,6 +902,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Glimmet',
+    regionalDexNumber: 308,
     nationalDexNumber: 966,
     types: [types.rock, types.poison],
     stats: {
@@ -855,6 +916,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Glimmora',
+    regionalDexNumber: 309,
     nationalDexNumber: 967,
     types: [types.rock, types.poison],
     stats: {
@@ -868,6 +930,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Shroodle',
+    regionalDexNumber: 202,
     nationalDexNumber: 968,
     types: [types.poison, types.normal],
     stats: {
@@ -881,6 +944,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Grafaiai',
+    regionalDexNumber: 203,
     nationalDexNumber: 969,
     types: [types.poison, types.normal],
     stats: {
@@ -894,6 +958,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Fidough',
+    regionalDexNumber: 76,
     nationalDexNumber: 970,
     types: [types.fairy],
     stats: {
@@ -907,6 +972,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Dachsbun',
+    regionalDexNumber: 77,
     nationalDexNumber: 971,
     types: [types.fairy],
     stats: {
@@ -920,6 +986,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Maschiff',
+    regionalDexNumber: 196,
     nationalDexNumber: 972,
     types: [types.dark],
     stats: {
@@ -933,6 +1000,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Mabosstiff',
+    regionalDexNumber: 197,
     nationalDexNumber: 973,
     types: [types.dark],
     stats: {
@@ -946,6 +1014,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Bramblin',
+    regionalDexNumber: 242,
     nationalDexNumber: 974,
     types: [types.grass, types.ghost],
     stats: {
@@ -959,6 +1028,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Brambleghast',
+    regionalDexNumber: 243,
     nationalDexNumber: 975,
     types: [types.grass, types.ghost],
     stats: {
@@ -972,6 +1042,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Gimmighoul-Roaming',
+    regionalDexNumber: 391,
     nationalDexNumber: 976,
     types: [types.ghost],
     stats: {
@@ -999,6 +1070,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Gholdengo',
+    regionalDexNumber: 392,
     nationalDexNumber: 977,
     types: [types.steel, types.ghost],
     stats: {
@@ -1012,6 +1084,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Great Tusk',
+    regionalDexNumber: 376,
     nationalDexNumber: 978,
     types: [types.ground, types.fighting],
     scarletExclusive: true,
@@ -1026,6 +1099,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Brute Bonnet',
+    regionalDexNumber: 378,
     nationalDexNumber: 979,
     types: [types.grass, types.dark],
     scarletExclusive: true,
@@ -1040,6 +1114,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Sandy Shocks',
+    regionalDexNumber: 381,
     nationalDexNumber: 981,
     types: [types.electric, types.ground],
     scarletExclusive: true,
@@ -1054,6 +1129,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Scream Tail',
+    regionalDexNumber: 377,
     nationalDexNumber: 982,
     types: [types.fairy, types.psychic],
     scarletExclusive: true,
@@ -1068,6 +1144,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Flutter Mane',
+    regionalDexNumber: 379,
     nationalDexNumber: 983,
     types: [types.ghost, types.fairy],
     scarletExclusive: true,
@@ -1082,6 +1159,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Slither Wing',
+    regionalDexNumber: 380,
     nationalDexNumber: 984,
     types: [types.bug, types.fighting],
     scarletExclusive: true,
@@ -1096,6 +1174,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Roaring Moon',
+    regionalDexNumber: 397,
     nationalDexNumber: 985,
     types: [types.dragon, types.dark],
     scarletExclusive: true,
@@ -1110,6 +1189,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Iron Treads',
+    regionalDexNumber: 382,
     nationalDexNumber: 986,
     types: [types.ground, types.steel],
     violetExclusive: true,
@@ -1124,6 +1204,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Iron Moth',
+    regionalDexNumber: 386,
     nationalDexNumber: 988,
     types: [types.fire, types.poison],
     violetExclusive: true,
@@ -1138,6 +1219,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Iron Hands',
+    regionalDexNumber: 384,
     nationalDexNumber: 989,
     types: [types.fighting, types.electric],
     violetExclusive: true,
@@ -1152,6 +1234,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Iron Jugulis',
+    regionalDexNumber: 385,
     nationalDexNumber: 990,
     types: [types.dark, types.flying],
     violetExclusive: true,
@@ -1166,6 +1249,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Iron Thorns',
+    regionalDexNumber: 387,
     nationalDexNumber: 991,
     types: [types.rock, types.electric],
     violetExclusive: true,
@@ -1180,6 +1264,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Iron Bundle',
+    regionalDexNumber: 383,
     nationalDexNumber: 992,
     types: [types.ice, types.water],
     violetExclusive: true,
@@ -1194,6 +1279,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Iron Valiant',
+    regionalDexNumber: 398,
     nationalDexNumber: 993,
     types: [types.fairy, types.fighting],
     violetExclusive: true,
@@ -1208,6 +1294,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Ting-Lu',
+    regionalDexNumber: 395,
     nationalDexNumber: 994,
     types: [types.dark, types.ground],
     stats: {
@@ -1221,6 +1308,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Chien-Pao',
+    regionalDexNumber: 394,
     nationalDexNumber: 995,
     types: [types.dark, types.ice],
     stats: {
@@ -1234,6 +1322,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Wo-Chien',
+    regionalDexNumber: 393,
     nationalDexNumber: 996,
     types: [types.dark, types.grass],
     stats: {
@@ -1247,6 +1336,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Chi-Yu',
+    regionalDexNumber: 396,
     nationalDexNumber: 997,
     types: [types.dark, types.fire],
     stats: {
@@ -1260,6 +1350,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Koraidon',
+    regionalDexNumber: 399,
     nationalDexNumber: 998,
     types: [types.fighting, types.dragon],
     scarletExclusive: true,
@@ -1280,6 +1371,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Miraidon',
+    regionalDexNumber: 400,
     nationalDexNumber: 999,
     types: [types.electric, types.dragon],
     violetExclusive: true,
@@ -1300,6 +1392,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Tinkatink',
+    regionalDexNumber: 279,
     nationalDexNumber: 1000,
     types: [types.fairy, types.steel],
     stats: {
@@ -1313,6 +1406,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Tinkatuff',
+    regionalDexNumber: 280,
     nationalDexNumber: 1001,
     types: [types.fairy, types.steel],
     stats: {
@@ -1326,6 +1420,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Tinkaton',
+    regionalDexNumber: 281,
     nationalDexNumber: 1002,
     types: [types.fairy, types.steel],
     stats: {
@@ -1339,6 +1434,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Charcadet',
+    regionalDexNumber: 165,
     nationalDexNumber: 1003,
     types: [types.fire],
     stats: {
@@ -1352,6 +1448,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Armarouge',
+    regionalDexNumber: 166,
     nationalDexNumber: 1004,
     types: [types.fire, types.psychic],
     scarletExclusive: true,
@@ -1366,6 +1463,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Ceruledge',
+    regionalDexNumber: 167,
     nationalDexNumber: 1005,
     types: [types.fire, types.ghost],
     violetExclusive: true,
@@ -1380,6 +1478,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Toedscool',
+    regionalDexNumber: 244,
     nationalDexNumber: 1006,
     types: [types.ground, types.grass],
     stats: {
@@ -1393,6 +1492,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Toedscruel',
+    regionalDexNumber: 245,
     nationalDexNumber: 1007,
     types: [types.ground, types.grass],
     stats: {
@@ -1406,6 +1506,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Kingambit',
+    regionalDexNumber: 369,
     nationalDexNumber: 1008,
     types: [types.dark, types.steel],
     stats: {
@@ -1419,6 +1520,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Clodsire',
+    regionalDexNumber: 54,
     nationalDexNumber: 1009,
     types: [types.poison, types.ground],
     stats: {
@@ -1432,6 +1534,7 @@ const pokemon: Pokemon[] = [
   },
   {
     name: 'Anihilape',
+    regionalDexNumber: 160,
     nationalDexNumber: 1010,
     types: [types.fighting, types.ghost],
     stats: {

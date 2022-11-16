@@ -4,6 +4,7 @@ import AlternateForm from './AlternateForm';
 
 interface Pokemon {
   name: string,
+  regionalDexNumber: number,
   nationalDexNumber: number,
   types: PokemonType[],
   stats?: Stats
