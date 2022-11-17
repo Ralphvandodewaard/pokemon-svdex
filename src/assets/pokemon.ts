@@ -1533,6 +1533,458 @@ const pokemon: Pokemon[] = [
       specialDefense: 90,
       speed: 90
     }
+  },
+  {
+    name: 'Hoppip',
+    regionalDexNumber: 16,
+    nationalDexNumber: 187,
+    types: [types.grass, types.flying]
+  },
+  {
+    name: 'Skiploom',
+    regionalDexNumber: 17,
+    nationalDexNumber: 188,
+    types: [types.grass, types.flying]
+  },
+  {
+    name: 'Jumpluff',
+    regionalDexNumber: 18,
+    nationalDexNumber: 189,
+    types: [types.grass, types.flying]
+  },
+  {
+    name: 'Fletchling',
+    regionalDexNumber: 19,
+    nationalDexNumber: 661,
+    types: [types.normal, types.flying]
+  },
+  {
+    name: 'Fletchinder',
+    regionalDexNumber: 20,
+    nationalDexNumber: 662,
+    types: [types.fire, types.flying]
+  },
+  {
+    name: 'Talonflame',
+    regionalDexNumber: 21,
+    nationalDexNumber: 663,
+    types: [types.fire, types.flying]
+  },
+  {
+    name: 'Houndour',
+    regionalDexNumber: 25,
+    nationalDexNumber: 228,
+    types: [types.dark, types.fire]
+  },
+  {
+    name: 'Houndoom',
+    regionalDexNumber: 26,
+    nationalDexNumber: 229,
+    types: [types.dark, types.fire]
+  },
+  {
+    name: 'Yungoos',
+    regionalDexNumber: 27,
+    nationalDexNumber: 734,
+    types: [types.normal]
+  },
+  {
+    name: 'Gumshoos',
+    regionalDexNumber: 28,
+    nationalDexNumber: 735,
+    types: [types.normal]
+  },
+  {
+    name: 'Skwovet',
+    regionalDexNumber: 29,
+    nationalDexNumber: 819,
+    types: [types.normal]
+  },
+  {
+    name: 'Greedent',
+    regionalDexNumber: 30,
+    nationalDexNumber: 820,
+    types: [types.normal]
+  },
+  {
+    name: 'Sunkern',
+    regionalDexNumber: 31,
+    nationalDexNumber: 191,
+    types: [types.grass]
+  },
+  {
+    name: 'Sunflora',
+    regionalDexNumber: 32,
+    nationalDexNumber: 192,
+    types: [types.grass]
+  },
+  {
+    name: 'Kricketot',
+    regionalDexNumber: 33,
+    nationalDexNumber: 401,
+    types: [types.bug]
+  },
+  {
+    name: 'Kricketune',
+    regionalDexNumber: 34,
+    nationalDexNumber: 402,
+    types: [types.bug]
+  },
+  {
+    name: 'Scatterbug',
+    regionalDexNumber: 35,
+    nationalDexNumber: 664,
+    types: [types.bug]
+  },
+  {
+    name: 'Spewpa',
+    regionalDexNumber: 36,
+    nationalDexNumber: 665,
+    types: [types.bug]
+  },
+  {
+    name: 'Vivillon',
+    regionalDexNumber: 37,
+    nationalDexNumber: 666,
+    types: [types.bug, types.flying]
+  },
+  {
+    name: 'Combee',
+    regionalDexNumber: 38,
+    nationalDexNumber: 415,
+    types: [types.bug, types.flying]
+  },
+  {
+    name: 'Vespiquen',
+    regionalDexNumber: 39,
+    nationalDexNumber: 416,
+    types: [types.bug, types.flying]
+  },
+  {
+    name: 'Rookidee',
+    regionalDexNumber: 40,
+    nationalDexNumber: 821,
+    types: [types.flying]
+  },
+  {
+    name: 'Corvisquire',
+    regionalDexNumber: 41,
+    nationalDexNumber: 822,
+    types: [types.flying]
+  },
+  {
+    name: 'Corviknight',
+    regionalDexNumber: 42,
+    nationalDexNumber: 823,
+    types: [types.flying, types.steel]
+  },
+  {
+    name: 'Happiny',
+    regionalDexNumber: 43,
+    nationalDexNumber: 440,
+    types: [types.normal]
+  },
+  {
+    name: 'Chansey',
+    regionalDexNumber: 44,
+    nationalDexNumber: 113,
+    types: [types.normal]
+  },
+  {
+    name: 'Blissey',
+    regionalDexNumber: 45,
+    nationalDexNumber: 242,
+    types: [types.normal]
+  },
+  {
+    name: 'Azurill',
+    regionalDexNumber: 46,
+    nationalDexNumber: 298,
+    types: [types.normal, types.fairy]
+  },
+  {
+    name: 'Marill',
+    regionalDexNumber: 47,
+    nationalDexNumber: 183,
+    types: [types.water, types.fairy]
+  },
+  {
+    name: 'Azumarill',
+    regionalDexNumber: 48,
+    nationalDexNumber: 184,
+    types: [types.water, types.fairy]
+  },
+  {
+    name: 'Surskit',
+    regionalDexNumber: 49,
+    nationalDexNumber: 283,
+    types: [types.bug, types.water]
+  },
+  {
+    name: 'Masquerain',
+    regionalDexNumber: 50,
+    nationalDexNumber: 284,
+    types: [types.bug, types.flying]
+  },
+  {
+    name: 'Buizel',
+    regionalDexNumber: 51,
+    nationalDexNumber: 418,
+    types: [types.water]
+  },
+  {
+    name: 'Floatzel',
+    regionalDexNumber: 52,
+    nationalDexNumber: 419,
+    types: [types.water]
+  },
+  {
+    name: 'Wooper',
+    regionalDexNumber: 53,
+    nationalDexNumber: 194,
+    types: [types.poison, types.ground],
+    stats: {
+      hp: 55,
+      attack: 45,
+      defense: 45,
+      specialAttack: 25,
+      specialDefense: 25,
+      speed: 15
+    }
+  },
+  {
+    name: 'Psyduck',
+    regionalDexNumber: 55,
+    nationalDexNumber: 54,
+    types: [types.water]
+  },
+  {
+    name: 'Golduck',
+    regionalDexNumber: 56,
+    nationalDexNumber: 55,
+    types: [types.water]
+  },
+  {
+    name: 'Chewtle',
+    regionalDexNumber: 57,
+    nationalDexNumber: 833,
+    types: [types.water]
+  },
+  {
+    name: 'Drednaw',
+    regionalDexNumber: 58,
+    nationalDexNumber: 834,
+    types: [types.water, types.rock]
+  },
+  {
+    name: 'Igglybuff',
+    regionalDexNumber: 59,
+    nationalDexNumber: 174,
+    types: [types.normal, types.fairy]
+  },
+  {
+    name: 'Jigglypuff',
+    regionalDexNumber: 60,
+    nationalDexNumber: 39,
+    types: [types.normal, types.fairy]
+  },
+  {
+    name: 'Wigglytuff',
+    regionalDexNumber: 61,
+    nationalDexNumber: 40,
+    types: [types.normal, types.fairy]
+  },
+  {
+    name: 'Ralts',
+    regionalDexNumber: 62,
+    nationalDexNumber: 280,
+    types: [types.psychic, types.fairy]
+  },
+  {
+    name: 'Kirlia',
+    regionalDexNumber: 63,
+    nationalDexNumber: 281,
+    types: [types.psychic, types.fairy]
+  },
+  {
+    name: 'Gardevoir',
+    regionalDexNumber: 64,
+    nationalDexNumber: 282,
+    types: [types.psychic, types.fairy]
+  },
+  {
+    name: 'Gallade',
+    regionalDexNumber: 65,
+    nationalDexNumber: 475,
+    types: [types.psychic, types.fighting]
+  },
+  {
+    name: 'Drowzee',
+    regionalDexNumber: 66,
+    nationalDexNumber: 96,
+    types: [types.psychic]
+  },
+  {
+    name: 'Hypno',
+    regionalDexNumber: 67,
+    nationalDexNumber: 97,
+    types: [types.psychic]
+  },
+  {
+    name: 'Gastly',
+    regionalDexNumber: 68,
+    nationalDexNumber: 92,
+    types: [types.ghost, types.poison]
+  },
+  {
+    name: 'Haunter',
+    regionalDexNumber: 69,
+    nationalDexNumber: 93,
+    types: [types.ghost, types.poison]
+  },
+  {
+    name: 'Gengar',
+    regionalDexNumber: 70,
+    nationalDexNumber: 94,
+    types: [types.ghost, types.poison]
+  },
+  {
+    name: 'Pichu',
+    regionalDexNumber: 73,
+    nationalDexNumber: 172,
+    types: [types.electric]
+  },
+  {
+    name: 'Pikachu',
+    regionalDexNumber: 74,
+    nationalDexNumber: 25,
+    types: [types.electric]
+  },
+  {
+    name: 'Raichu',
+    regionalDexNumber: 75,
+    nationalDexNumber: 26,
+    types: [types.electric]
+  },
+  {
+    name: 'Slakoth',
+    regionalDexNumber: 78,
+    nationalDexNumber: 287,
+    types: [types.normal]
+  },
+  {
+    name: 'Vigoroth',
+    regionalDexNumber: 79,
+    nationalDexNumber: 288,
+    types: [types.normal]
+  },
+  {
+    name: 'Slaking',
+    regionalDexNumber: 80,
+    nationalDexNumber: 289,
+    types: [types.normal]
+  },
+  {
+    name: 'Bounsweet',
+    regionalDexNumber: 81,
+    nationalDexNumber: 761,
+    types: [types.grass]
+  },
+  {
+    name: 'Steenee',
+    regionalDexNumber: 82,
+    nationalDexNumber: 762,
+    types: [types.grass]
+  },
+  {
+    name: 'Tsareena',
+    regionalDexNumber: 83,
+    nationalDexNumber: 763,
+    types: [types.grass]
+  },
+  {
+    name: 'Bonsly',
+    regionalDexNumber: 87,
+    nationalDexNumber: 438,
+    types: [types.rock]
+  },
+  {
+    name: 'Sudowoodo',
+    regionalDexNumber: 88,
+    nationalDexNumber: 185,
+    types: [types.rock]
+  },
+  {
+    name: 'Rockruff',
+    regionalDexNumber: 89,
+    nationalDexNumber: 744,
+    types: [types.rock]
+  },
+  {
+    name: 'Lycanroc',
+    regionalDexNumber: 90,
+    nationalDexNumber: 745,
+    types: [types.rock]
+  },
+  {
+    name: 'Rolycoly',
+    regionalDexNumber: 91,
+    nationalDexNumber: 837,
+    types: [types.rock]
+  },
+  {
+    name: 'Carkol',
+    regionalDexNumber: 92,
+    nationalDexNumber: 838,
+    types: [types.rock, types.fire]
+  },
+  {
+    name: 'Coalossal',
+    regionalDexNumber: 93,
+    nationalDexNumber: 839,
+    types: [types.rock, types.fire]
+  },
+  {
+    name: 'Shinx',
+    regionalDexNumber: 94,
+    nationalDexNumber: 403,
+    types: [types.electric]
+  },
+  {
+    name: 'Luxio',
+    regionalDexNumber: 95,
+    nationalDexNumber: 404,
+    types: [types.electric]
+  },
+  {
+    name: 'Luxray',
+    regionalDexNumber: 96,
+    nationalDexNumber: 405,
+    types: [types.electric]
+  },
+  {
+    name: 'Starly',
+    regionalDexNumber: 97,
+    nationalDexNumber: 396,
+    types: [types.normal, types.flying]
+  },
+  {
+    name: 'Staravia',
+    regionalDexNumber: 98,
+    nationalDexNumber: 397,
+    types: [types.normal, types.flying]
+  },
+  {
+    name: 'Staraptor',
+    regionalDexNumber: 99,
+    nationalDexNumber: 398,
+    types: [types.normal, types.flying]
+  },
+  {
+    name: 'Oricorio',
+    regionalDexNumber: 100,
+    nationalDexNumber: 741,
+    types: [types.fire, types.flying]
   }
 ];
 
