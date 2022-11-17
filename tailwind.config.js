@@ -4,7 +4,7 @@ module.exports = {
   safelist: [
     { pattern: /bg-types-(normal|fighting|flying|poison|ground|rock|bug|ghost|steel|fire|water|grass|electric|psychic|ice|dragon|dark|fairy)/ },
     { pattern: /bg-multipliers-(0|0.25|0.5|2|4)/ },
-    { pattern: /bg-stats(low|average|high|very-high|ultra-high)/ }
+    { pattern: /bg-stats-(low|average|high|very-high|ultra-high)/ }
   ],
   theme: {
     extend: {
