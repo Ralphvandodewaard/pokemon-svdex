@@ -1985,6 +1985,510 @@ const pokemon: Pokemon[] = [
     regionalDexNumber: 100,
     nationalDexNumber: 741,
     types: [types.fire, types.flying]
+  },
+  {
+    name: 'Mareep',
+    regionalDexNumber: 101,
+    nationalDexNumber: 179,
+    types: [types.electric]
+  },
+  {
+    name: 'Flaaffy',
+    regionalDexNumber: 102,
+    nationalDexNumber: 180,
+    types: [types.electric]
+  },
+  {
+    name: 'Ampharos',
+    regionalDexNumber: 103,
+    nationalDexNumber: 181,
+    types: [types.electric]
+  },
+  {
+    name: 'Petilil',
+    regionalDexNumber: 104,
+    nationalDexNumber: 548,
+    types: [types.grass]
+  },
+  {
+    name: 'Lilligant',
+    regionalDexNumber: 105,
+    nationalDexNumber: 549,
+    types: [types.grass]
+  },
+  {
+    name: 'Shroomish',
+    regionalDexNumber: 106,
+    nationalDexNumber: 285,
+    types: [types.grass]
+  },
+  {
+    name: 'Breloom',
+    regionalDexNumber: 107,
+    nationalDexNumber: 286,
+    types: [types.grass, types.fighting]
+  },
+  {
+    name: 'Applin',
+    regionalDexNumber: 108,
+    nationalDexNumber: 840,
+    types: [types.grass, types.dragon]
+  },
+  {
+    name: 'Flapple',
+    regionalDexNumber: 109,
+    nationalDexNumber: 841,
+    types: [types.grass, types.dragon]
+  },
+  {
+    name: 'Appletun',
+    regionalDexNumber: 110,
+    nationalDexNumber: 842,
+    types: [types.grass, types.dragon]
+  },
+  {
+    name: 'Spoink',
+    regionalDexNumber: 111,
+    nationalDexNumber: 325,
+    types: [types.psychic]
+  },
+  {
+    name: 'Grumpig',
+    regionalDexNumber: 112,
+    nationalDexNumber: 326,
+    types: [types.psychic]
+  },
+  {
+    name: 'Misdreavus',
+    regionalDexNumber: 114,
+    nationalDexNumber: 200,
+    types: [types.ghost],
+    violetExclusive: true
+  },
+  {
+    name: 'Mismagius',
+    regionalDexNumber: 115,
+    nationalDexNumber: 429,
+    types: [types.ghost],
+    violetExclusive: true
+  },
+  {
+    name: 'Makuhita',
+    regionalDexNumber: 115,
+    nationalDexNumber: 296,
+    types: [types.fighting]
+  },
+  {
+    name: 'Hariyama',
+    regionalDexNumber: 117,
+    nationalDexNumber: 297,
+    types: [types.fighting]
+  },
+  {
+    name: 'Crabrawler',
+    regionalDexNumber: 118,
+    nationalDexNumber: 739,
+    types: [types.fighting]
+  },
+  {
+    name: 'Crabominable',
+    regionalDexNumber: 119,
+    nationalDexNumber: 740,
+    types: [types.fighting, types.ice]
+  },
+  {
+    name: 'Salandit',
+    regionalDexNumber: 120,
+    nationalDexNumber: 757,
+    types: [types.poison, types.fire]
+  },
+  {
+    name: 'Salazzle',
+    regionalDexNumber: 121,
+    nationalDexNumber: 758,
+    types: [types.poison, types.fire]
+  },
+  {
+    name: 'Phanpy',
+    regionalDexNumber: 122,
+    nationalDexNumber: 231,
+    types: [types.ground]
+  },
+  {
+    name: 'Donphan',
+    regionalDexNumber: 123,
+    nationalDexNumber: 232,
+    types: [types.ground]
+  },
+  {
+    name: 'Cufant',
+    regionalDexNumber: 124,
+    nationalDexNumber: 878,
+    types: [types.steel]
+  },
+  {
+    name: 'Copperajah',
+    regionalDexNumber: 125,
+    nationalDexNumber: 879,
+    types: [types.steel]
+  },
+  {
+    name: 'Gible',
+    regionalDexNumber: 126,
+    nationalDexNumber: 443,
+    types: [types.dragon, types.ground]
+  },
+  {
+    name: 'Gabite',
+    regionalDexNumber: 127,
+    nationalDexNumber: 444,
+    types: [types.dragon, types.ground]
+  },
+  {
+    name: 'Garchomp',
+    regionalDexNumber: 128,
+    nationalDexNumber: 445,
+    types: [types.dragon, types.ground]
+  },
+  {
+    name: 'Wingull',
+    regionalDexNumber: 132,
+    nationalDexNumber: 278,
+    types: [types.water, types.flying]
+  },
+  {
+    name: 'Pelipper',
+    regionalDexNumber: 133,
+    nationalDexNumber: 279,
+    types: [types.water, types.flying]
+  },
+  {
+    name: 'Magikarp',
+    regionalDexNumber: 134,
+    nationalDexNumber: 129,
+    types: [types.water]
+  },
+  {
+    name: 'Gyarados',
+    regionalDexNumber: 135,
+    nationalDexNumber: 130,
+    types: [types.water, types.flying]
+  },
+  {
+    name: 'Arrokuda',
+    regionalDexNumber: 136,
+    nationalDexNumber: 846,
+    types: [types.water, types.flying]
+  },
+  {
+    name: 'Basculin',
+    regionalDexNumber: 138,
+    nationalDexNumber: 550,
+    types: [types.water]
+  },
+  {
+    name: 'Gulpin',
+    regionalDexNumber: 139,
+    nationalDexNumber: 316,
+    types: [types.poison],
+    violetExclusive: true
+  },
+  {
+    name: 'Swalot',
+    regionalDexNumber: 140,
+    nationalDexNumber: 317,
+    types: [types.poison],
+    violetExclusive: true
+  },
+  {
+    name: 'Meowth',
+    regionalDexNumber: 141,
+    nationalDexNumber: 52,
+    types: [types.normal]
+  },
+  {
+    name: 'Persian',
+    regionalDexNumber: 142,
+    nationalDexNumber: 53,
+    types: [types.normal]
+  },
+  {
+    name: 'Drifloon',
+    regionalDexNumber: 143,
+    nationalDexNumber: 425,
+    types: [types.ghost, types.flying],
+    scarletExclusive: true
+  },
+  {
+    name: 'Drifblim',
+    regionalDexNumber: 144,
+    nationalDexNumber: 426,
+    types: [types.ghost, types.flying],
+    scarletExclusive: true
+  },
+  {
+    name: 'Flabebe',
+    regionalDexNumber: 145,
+    nationalDexNumber: 669,
+    types: [types.fairy]
+  },
+  {
+    name: 'Floette',
+    regionalDexNumber: 146,
+    nationalDexNumber: 670,
+    types: [types.fairy]
+  },
+  {
+    name: 'Florges',
+    regionalDexNumber: 147,
+    nationalDexNumber: 671,
+    types: [types.fairy]
+  },
+  {
+    name: 'Diglett',
+    regionalDexNumber: 148,
+    nationalDexNumber: 50,
+    types: [types.ground]
+  },
+  {
+    name: 'Dugtrio',
+    regionalDexNumber: 149,
+    nationalDexNumber: 51,
+    types: [types.ground]
+  },
+  {
+    name: 'Torkoal',
+    regionalDexNumber: 150,
+    nationalDexNumber: 324,
+    types: [types.fire]
+  },
+  {
+    name: 'Numel',
+    regionalDexNumber: 151,
+    nationalDexNumber: 322,
+    types: [types.fire, types.ground]
+  },
+  {
+    name: 'Camerupt',
+    regionalDexNumber: 152,
+    nationalDexNumber: 323,
+    types: [types.fire, types.ground]
+  },
+  {
+    name: 'Bronzor',
+    regionalDexNumber: 153,
+    nationalDexNumber: 436,
+    types: [types.steel, types.psychic]
+  },
+  {
+    name: 'Bronzong',
+    regionalDexNumber: 154,
+    nationalDexNumber: 437,
+    types: [types.steel, types.psychic]
+  },
+  {
+    name: 'Axew',
+    regionalDexNumber: 155,
+    nationalDexNumber: 610,
+    types: [types.dragon]
+  },
+  {
+    name: 'Fraxure',
+    regionalDexNumber: 156,
+    nationalDexNumber: 611,
+    types: [types.dragon]
+  },
+  {
+    name: 'Haxorus',
+    regionalDexNumber: 157,
+    nationalDexNumber: 612,
+    types: [types.dragon]
+  },
+  {
+    name: 'Mankey',
+    regionalDexNumber: 158,
+    nationalDexNumber: 56,
+    types: [types.fighting]
+  },
+  {
+    name: 'Primeape',
+    regionalDexNumber: 159,
+    nationalDexNumber: 57,
+    types: [types.fighting]
+  },
+  {
+    name: 'Meditite',
+    regionalDexNumber: 161,
+    nationalDexNumber: 307,
+    types: [types.fighting, types.psychic]
+  },
+  {
+    name: 'Medicham',
+    regionalDexNumber: 162,
+    nationalDexNumber: 308,
+    types: [types.fighting, types.psychic]
+  },
+  {
+    name: 'Riolu',
+    regionalDexNumber: 163,
+    nationalDexNumber: 447,
+    types: [types.fighting]
+  },
+  {
+    name: 'Lucario',
+    regionalDexNumber: 164,
+    nationalDexNumber: 448,
+    types: [types.fighting, types.steel]
+  },
+  {
+    name: 'Barboach',
+    regionalDexNumber: 168,
+    nationalDexNumber: 339,
+    types: [types.water, types.ground]
+  },
+  {
+    name: 'Whiscash',
+    regionalDexNumber: 169,
+    nationalDexNumber: 340,
+    types: [types.water, types.ground]
+  },
+  {
+    name: 'Goomy',
+    regionalDexNumber: 172,
+    nationalDexNumber: 704,
+    types: [types.dragon]
+  },
+  {
+    name: 'Sliggoo',
+    regionalDexNumber: 173,
+    nationalDexNumber: 705,
+    types: [types.dragon]
+  },
+  {
+    name: 'Goodra',
+    regionalDexNumber: 174,
+    nationalDexNumber: 706,
+    types: [types.dragon]
+  },
+  {
+    name: 'Croagunk',
+    regionalDexNumber: 175,
+    nationalDexNumber: 453,
+    types: [types.poison, types.fighting]
+  },
+  {
+    name: 'Toxicroak',
+    regionalDexNumber: 176,
+    nationalDexNumber: 454,
+    types: [types.poison, types.fighting]
+  },
+  {
+    name: 'Eevee',
+    regionalDexNumber: 179,
+    nationalDexNumber: 133,
+    types: [types.normal]
+  },
+  {
+    name: 'Vaporeon',
+    regionalDexNumber: 180,
+    nationalDexNumber: 134,
+    types: [types.water]
+  },
+  {
+    name: 'Jolteon',
+    regionalDexNumber: 181,
+    nationalDexNumber: 135,
+    types: [types.electric]
+  },
+  {
+    name: 'Flareon',
+    regionalDexNumber: 182,
+    nationalDexNumber: 136,
+    types: [types.fire]
+  },
+  {
+    name: 'Espeon',
+    regionalDexNumber: 183,
+    nationalDexNumber: 196,
+    types: [types.psychic]
+  },
+  {
+    name: 'Umbreon',
+    regionalDexNumber: 184,
+    nationalDexNumber: 197,
+    types: [types.dark]
+  },
+  {
+    name: 'Leafeon',
+    regionalDexNumber: 185,
+    nationalDexNumber: 470,
+    types: [types.grass]
+  },
+  {
+    name: 'Glaceon',
+    regionalDexNumber: 186,
+    nationalDexNumber: 471,
+    types: [types.ice]
+  },
+  {
+    name: 'Sylveon',
+    regionalDexNumber: 187,
+    nationalDexNumber: 700,
+    types: [types.fairy]
+  },
+  {
+    name: 'Dunsparce',
+    regionalDexNumber: 188,
+    nationalDexNumber: 206,
+    types: [types.normal]
+  },
+  {
+    name: 'Deerling',
+    regionalDexNumber: 190,
+    nationalDexNumber: 585,
+    types: [types.normal, types.grass]
+  },
+  {
+    name: 'Sawsbuck',
+    regionalDexNumber: 191,
+    nationalDexNumber: 586,
+    types: [types.normal, types.grass]
+  },
+  {
+    name: 'Girafarig',
+    regionalDexNumber: 192,
+    nationalDexNumber: 203,
+    types: [types.normal, types.psychic]
+  },
+  {
+    name: 'Grimer',
+    regionalDexNumber: 194,
+    nationalDexNumber: 88,
+    types: [types.poison]
+  },
+  {
+    name: 'Muk',
+    regionalDexNumber: 195,
+    nationalDexNumber: 89,
+    types: [types.poison]
+  },
+  {
+    name: 'Toxel',
+    regionalDexNumber: 198,
+    nationalDexNumber: 848,
+    types: [types.electric, types.poison]
+  },
+  {
+    name: 'Toxtricity',
+    regionalDexNumber: 199,
+    nationalDexNumber: 849,
+    types: [types.electric, types.poison]
+  },
+  {
+    name: 'Dedennne',
+    regionalDexNumber: 200,
+    nationalDexNumber: 702,
+    types: [types.electric, types.fairy]
   }
 ];
 
