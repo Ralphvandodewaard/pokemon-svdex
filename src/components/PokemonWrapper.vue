@@ -19,19 +19,35 @@
           :pokemon-types="pokemon.types"
         />
       </div>
-      <template v-if="pokemon.stats">
+      <template v-if="pokemonStats">
         <StatsWrapper
-          :stats="pokemon.stats"
+          :stats="pokemonStats"
           :selected-alternate-form="selectedAlternateForm"
         />
       </template>
+      <div
+        v-else
+        class="h-[170px] px-3 py-2 bg-neutral-800 text-xs text-blue-400 border border-black rounded"
+      >
+        <button @click="loadStats">
+          Load stats
+        </button>
+      </div>
       <WeaknessesWrapper :pokemon-types="pokemon.types" />
     </div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType, Ref, ref } from 'vue';
+import {
+  defineComponent,
+  PropType,
+  Ref,
+  ref,
+  onMounted
+} from 'vue';
+import axios from 'axios';
+import PokemonDto from '@/api/PokemonDto';
 import Pokemon from '@/models/Pokemon';
 import AlternateForm from '@/models/AlternateForm';
 import SpriteWrapper from './SpriteWrapper.vue';
@@ -39,6 +55,7 @@ import NameWrapper from './NameWrapper.vue';
 import TypesWrapper from './TypesWrapper.vue';
 import StatsWrapper from './StatsWrapper.vue';
 import WeaknessesWrapper from './WeaknessesWrapper.vue';
+import Stats from '@/models/Stats';
 
 export default defineComponent({
   name: 'PokemonWrapper',
@@ -55,11 +72,36 @@ export default defineComponent({
       required: true
     }
   },
-  setup() {
+  setup(props) {
     const selectedAlternateForm: Ref<AlternateForm | null> = ref(null);
 
+    const pokemonStats: Ref<Stats | null> = ref(null);
+
+    onMounted(() => {
+      if (props.pokemon.stats) {
+        pokemonStats.value = props.pokemon.stats;
+      }
+    });
+
+    async function loadStats(): Promise<void> {
+      axios
+        .get<PokemonDto>(`https://pokeapi.co/api/v2/pokemon/${props.pokemon.name.toLowerCase()}`)
+        .then((response) => {
+          pokemonStats.value = {
+            hp: response.data.stats[0].base_stat,
+            attack: response.data.stats[1].base_stat,
+            defense: response.data.stats[2].base_stat,
+            specialAttack: response.data.stats[3].base_stat,
+            specialDefense: response.data.stats[4].base_stat,
+            speed: response.data.stats[5].base_stat
+          };
+        });
+    }
+
     return {
-      selectedAlternateForm
+      selectedAlternateForm,
+      pokemonStats,
+      loadStats
     };
   }
 });
