@@ -27,11 +27,24 @@
       </template>
       <div
         v-else
-        class="h-[170px] px-3 py-2 bg-neutral-800 text-xs text-blue-400 border border-black rounded"
+        class="h-[170px] px-3 py-2 bg-neutral-800 text-xs border border-black rounded"
       >
-        <button @click="loadStats">
+        <button
+          v-if="!isLoading"
+          class="text-blue-400"
+          @click="loadStats"
+        >
           Load stats
         </button>
+        <p v-else>
+          Loading..
+        </p>
+        <p
+          v-if="errorMessage"
+          class="text-red-400"
+        >
+          {{ errorMessage }}
+        </p>
       </div>
       <WeaknessesWrapper :pokemon-types="pokemon.types" />
     </div>
@@ -77,6 +90,10 @@ export default defineComponent({
 
     const pokemonStats: Ref<Stats | null> = ref(null);
 
+    const isLoading = ref(false);
+
+    const errorMessage = ref('');
+
     onMounted(() => {
       if (props.pokemon.stats) {
         pokemonStats.value = props.pokemon.stats;
@@ -84,7 +101,10 @@ export default defineComponent({
     });
 
     async function loadStats(): Promise<void> {
-      axios
+      isLoading.value = true;
+      errorMessage.value = '';
+
+      await axios
         .get<PokemonDto>(`https://pokeapi.co/api/v2/pokemon/${props.pokemon.name.toLowerCase()}`)
         .then((response) => {
           pokemonStats.value = {
@@ -95,12 +115,19 @@ export default defineComponent({
             specialDefense: response.data.stats[4].base_stat,
             speed: response.data.stats[5].base_stat
           };
+        })
+        .catch(() => {
+          errorMessage.value = 'Error while fetching stats';
         });
+
+      isLoading.value = false;
     }
 
     return {
       selectedAlternateForm,
       pokemonStats,
+      isLoading,
+      errorMessage,
       loadStats
     };
   }
