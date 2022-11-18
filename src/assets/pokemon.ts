@@ -2485,7 +2485,7 @@ const pokemon: Pokemon[] = [
     types: [types.electric, types.poison]
   },
   {
-    name: 'Dedennne',
+    name: 'Dedenne',
     regionalDexNumber: 200,
     nationalDexNumber: 702,
     types: [types.electric, types.fairy]
