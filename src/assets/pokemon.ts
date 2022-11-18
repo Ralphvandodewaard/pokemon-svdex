@@ -424,7 +424,7 @@ const pokemon: Pokemon[] = [
     alternateForms: [
       {
         id: '934-2',
-        name: 'Palafin-Hero',
+        name: 'Palafin-hero',
         stats: {
           hp: 100,
           attack: 160,
@@ -1041,7 +1041,7 @@ const pokemon: Pokemon[] = [
     }
   },
   {
-    name: 'Gimmighoul-Chest',
+    name: 'Gimmighoul-chest',
     regionalDexNumber: 391,
     nationalDexNumber: 976,
     types: [types.ghost],
@@ -1056,7 +1056,7 @@ const pokemon: Pokemon[] = [
     alternateForms: [
       {
         id: '976-2',
-        name: 'Gimmighoul-Roaming',
+        name: 'Gimmighoul-roaming',
         stats: {
           hp: 45,
           attack: 30,
@@ -1921,10 +1921,20 @@ const pokemon: Pokemon[] = [
     types: [types.rock]
   },
   {
-    name: 'Lycanroc',
+    name: 'Lycanroc-midday',
     regionalDexNumber: 90,
     nationalDexNumber: 745,
-    types: [types.rock]
+    types: [types.rock],
+    alternateForms: [
+      {
+        id: '745-2',
+        name: 'Lycanroc-midnight'
+      },
+      {
+        id: '745-3',
+        name: 'Lycanroc-dusk'
+      }
+    ]
   },
   {
     name: 'Rolycoly',
@@ -1981,7 +1991,7 @@ const pokemon: Pokemon[] = [
     types: [types.normal, types.flying]
   },
   {
-    name: 'Oricorio',
+    name: 'Oricorio-baile',
     regionalDexNumber: 100,
     nationalDexNumber: 741,
     types: [types.fire, types.flying]
@@ -2181,10 +2191,16 @@ const pokemon: Pokemon[] = [
     types: [types.water, types.flying]
   },
   {
-    name: 'Basculin',
+    name: 'Basculin-red-striped',
     regionalDexNumber: 138,
     nationalDexNumber: 550,
-    types: [types.water]
+    types: [types.water],
+    alternateForms: [
+      {
+        id: '550-2',
+        name: 'Basculin-blue-striped'
+      }
+    ]
   },
   {
     name: 'Gulpin',
@@ -2479,10 +2495,16 @@ const pokemon: Pokemon[] = [
     types: [types.electric, types.poison]
   },
   {
-    name: 'Toxtricity',
+    name: 'Toxtricity-amped',
     regionalDexNumber: 199,
     nationalDexNumber: 849,
-    types: [types.electric, types.poison]
+    types: [types.electric, types.poison],
+    alternateForms: [
+      {
+        id: '849-2',
+        name: 'Toxtricity-low-key'
+      }
+    ]
   },
   {
     name: 'Dedenne',
